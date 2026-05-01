@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --border: #1e1e2e;
+    --text: #e8e8f0;
+    --muted: #4a4a6a;
+    --accent: #c8ff00;
+    --accent3: #7b61ff;
+    --work-text: #60b4ff;
+    --sleep: #1a1a2e;
+    --sleep-text: #5a5a8a;
+    --food-bg: #0f1f0f;
+    --food-text: #6dff9f;
+    --food-border: rgba(109,255,159,0.22);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:'DM Mono',monospace; min-height:100vh; overflow-x:hidden; }
+  body::before {
+    content:''; position:fixed; inset:0; pointer-events:none; z-index:1000; opacity:0.35;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+  .container { max-width:940px; margin:0 auto; padding:40px 24px; }
+
+  /* Header */
+  .header { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:36px; padding-bottom:24px; border-bottom:1px solid var(--border); }
+  .logo { font-family:'Bebas Neue',sans-serif; font-size:clamp(44px,9vw,76px); letter-spacing:0.05em; line-height:0.9; }
+  .logo span { color:var(--accent); }
+  .clock-block { text-align:right; }
+  .live-time { font-family:'Bebas Neue',sans-serif; font-size:clamp(32px,6vw,56px); color:var(--accent); letter-spacing:0.05em; line-height:1; }
+  .live-date { font-size:11px; color:var(--muted); letter-spacing:0.14em; text-transform:uppercase; margin-top:4px; }
+
+  .week-badge {
+    display:inline-flex; align-items:center; gap:8px; background:rgba(200,255,0,0.07);
+    border:1px solid rgba(200,255,0,0.18); border-radius:2px; padding:5px 13px;
+    font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:24px;
+  }
+  .week-badge::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--accent); animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.35;transform:scale(0.75)} }
+
+  /* Top two-col grid */
+  .top-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:12px; }
+
+  /* NOW block */
+  .now-block {
+    background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent);
+    padding:22px 26px; position:relative; overflow:hidden; animation:fadeUp 0.45s ease;
+  }
+  .now-block::after { content:'NOW'; position:absolute; right:14px; top:14px; font-family:'Bebas Neue',sans-serif; font-size:46px; color:rgba(200,255,0,0.05); letter-spacing:0.1em; }
+  .now-label { font-size:10px; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent); margin-bottom:7px; }
+  .now-emoji { font-size:26px; margin-bottom:5px; display:block; }
+  .now-activity { font-family:'Bebas Neue',sans-serif; font-size:clamp(28px,5.5vw,50px); letter-spacing:0.04em; line-height:1; }
+  .now-time { font-size:11px; color:var(--muted); margin-top:8px; letter-spacing:0.07em; }
+  .progress-wrap { margin-top:14px; height:2px; background:var(--border); overflow:hidden; }
+  .progress-bar { height:100%; background:var(--accent); transition:width 1s linear; box-shadow:0 0 6px var(--accent); }
+  .progress-label { display:flex; justify-content:space-between; font-size:10px; color:var(--muted); margin-top:4px; }
+
+  /* Food block */
+  .food-block {
+    background:var(--food-bg); border:1px solid var(--food-border); border-left:3px solid var(--food-text);
+    padding:22px 26px; position:relative; overflow:hidden; animation:fadeUp 0.45s ease 0.05s both;
+  }
+  .food-block::after { content:'EAT'; position:absolute; right:14px; top:14px; font-family:'Bebas Neue',sans-serif; font-size:46px; color:rgba(109,255,159,0.05); letter-spacing:0.1em; }
+  .food-label { font-size:10px; letter-spacing:0.24em; text-transform:uppercase; color:var(--food-text); margin-bottom:7px; }
+  .food-slot-tag { display:inline-block; padding:2px 8px; font-size:9px; letter-spacing:0.14em; text-transform:uppercase; border-radius:2px; margin-bottom:8px; background:rgba(109,255,159,0.1); color:var(--food-text); border:1px solid var(--food-border); }
+  .food-name { font-family:'Bebas Neue',sans-serif; font-size:clamp(22px,4.5vw,40px); letter-spacing:0.04em; line-height:1; margin-bottom:9px; }
+  .food-ings { list-style:none; }
+  .food-ings li { font-size:11px; color:var(--muted); padding:3px 0; border-bottom:1px solid rgba(255,255,255,0.03); letter-spacing:0.04em; }
+  .food-ings li::before { content:'– '; color:var(--food-text); }
+  .food-hint { font-size:10px; color:var(--muted); margin-top:5px; letter-spacing:0.07em; }
+  .penny-btn {
+    margin-top:12px; display:inline-flex; align-items:center; gap:7px;
+    background:#e2001a; color:#fff; border:none; padding:7px 14px;
+    font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.14em;
+    text-transform:uppercase; cursor:pointer; border-radius:2px; transition:opacity .2s,transform .1s;
+  }
+  .penny-btn:hover { opacity:.88; }
+  .penny-btn:active { transform:scale(0.97); }
+
+  /* Meals mini row */
+  .meals-row { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:12px; }
+  .meal-mini {
+    background:var(--surface); border:1px solid var(--border); padding:11px 13px;
+    cursor:pointer; transition:border-color .2s,background .2s; position:relative;
+  }
+  .meal-mini:hover { border-color:var(--food-border); background:rgba(15,31,15,0.6); }
+  .meal-mini.active { border-color:var(--food-text); background:rgba(15,31,15,0.8); }
+  .meal-mini.done { opacity:.38; }
+  .meal-mini-dot { position:absolute; top:7px; right:7px; width:5px; height:5px; border-radius:50%; background:var(--food-text); }
+  .meal-mini-time { font-size:9px; color:var(--muted); letter-spacing:0.09em; margin-bottom:3px; }
+  .meal-mini-label { font-size:9px; letter-spacing:0.13em; text-transform:uppercase; color:var(--food-text); margin-bottom:3px; }
+  .meal-mini-name { font-family:'Bebas Neue',sans-serif; font-size:14px; letter-spacing:0.04em; line-height:1.1; }
+
+  .divider { height:1px; background:var(--border); margin:26px 0; }
+  .section-title { font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
+
+  /* Week grid */
+  .schedule-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:9px; }
+  .day-card { background:var(--surface); border:1px solid var(--border); padding:16px; transition:border-color .2s; }
+  .day-card.today { border-color:rgba(200,255,0,.28); }
+  .day-card:hover { border-color:var(--muted); }
+  .day-name { font-family:'Bebas Neue',sans-serif; font-size:24px; letter-spacing:0.05em; margin-bottom:10px; color:var(--muted); }
+  .day-card.today .day-name { color:var(--accent); }
+  .day-slot { display:flex; gap:7px; align-items:center; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.03); font-size:10px; }
+  .day-slot:last-child { border-bottom:none; }
+  .day-slot-time { color:var(--muted); font-size:9px; min-width:72px; letter-spacing:0.04em; }
+  .day-slot-name { color:var(--text); letter-spacing:0.04em; }
+  .day-slot-name.food-col { color:var(--food-text); }
+
+  .footer { margin-top:36px; padding-top:18px; border-top:1px solid var(--border); font-size:10px; color:var(--muted); letter-spacing:0.14em; text-transform:uppercase; display:flex; justify-content:space-between; }
+
+  /* Modal */
+  .modal-overlay {
+    position:fixed; inset:0; background:rgba(0,0,0,.82); z-index:2000;
+    display:flex; align-items:center; justify-content:center; padding:20px;
+    backdrop-filter:blur(5px); animation:fadeIn .2s ease;
+  }
+  .modal-overlay.hidden { display:none; }
+  @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+  .modal {
+    background:var(--surface); border:1px solid var(--border); border-top:3px solid #e2001a;
+    max-width:500px; width:100%; padding:30px; position:relative;
+    animation:slideUp .22s ease; max-height:90vh; overflow-y:auto;
+  }
+  @keyframes slideUp { from{transform:translateY(18px);opacity:0} to{transform:translateY(0);opacity:1} }
+  .modal-close { position:absolute; top:14px; right:14px; background:none; border:none; color:var(--muted); cursor:pointer; font-size:17px; font-family:'DM Mono',monospace; }
+  .modal-close:hover { color:var(--text); }
+  .modal-head { display:flex; align-items:center; gap:10px; margin-bottom:18px; }
+  .penny-logo { background:#e2001a; color:#fff; font-family:'Bebas Neue',sans-serif; font-size:17px; padding:3px 9px; letter-spacing:0.1em; border-radius:2px; }
+  .modal-title { font-family:'Bebas Neue',sans-serif; font-size:26px; letter-spacing:0.05em; }
+  .modal-sub { font-size:10px; color:var(--muted); margin-top:2px; letter-spacing:0.09em; }
+  .modal-day { font-size:10px; color:var(--food-text); letter-spacing:0.18em; text-transform:uppercase; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid var(--border); }
+  .shop-section { margin-bottom:16px; }
+  .shop-section-title { font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); margin-bottom:7px; }
+  .shop-item { display:flex; align-items:center; gap:9px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,.04); cursor:pointer; }
+  .shop-item:last-child { border-bottom:none; }
+  .shop-check { width:15px; height:15px; border:1px solid var(--muted); border-radius:2px; flex-shrink:0; display:flex; align-items:center; justify-content:center; transition:all .14s; }
+  .shop-item.ticked .shop-check { background:var(--food-text); border-color:var(--food-text); }
+  .shop-item.ticked .shop-check::after { content:'✓'; font-size:10px; color:#000; }
+  .shop-name { font-size:13px; letter-spacing:0.04em; transition:color .14s; }
+  .shop-item.ticked .shop-name { color:var(--muted); text-decoration:line-through; }
+  .shop-for { font-size:9px; color:var(--muted); margin-left:auto; letter-spacing:0.04em; white-space:nowrap; }
+  .modal-foot { margin-top:18px; display:flex; gap:9px; }
+  .modal-btn { flex:1; padding:9px; font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; border-radius:2px; cursor:pointer; transition:opacity .18s; }
+  .btn-primary { background:#e2001a; color:#fff; border:none; }
+  .btn-secondary { background:none; color:var(--muted); border:1px solid var(--border); }
+  .modal-btn:hover { opacity:.82; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+
+  @media(max-width:680px) {
+    .top-grid { grid-template-columns:1fr; }
+    .meals-row { grid-template-columns:repeat(2,1fr); }
+    .header { flex-direction:column; align-items:flex-start; gap:12px; }
+    .clock-block { text-align:left; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="header">
+    <div class="logo">DAILY<br><span>PLANNER</span></div>
+    <div class="clock-block">
+      <div class="live-time" id="live-time">--:--:--</div>
+      <div class="live-date" id="live-date">Loading...</div>
+    </div>
+  </header>
+
+  <div class="week-badge" id="week-badge">Week 1 · Cycle</div>
+
+  <div class="top-grid">
+    <!-- Activity NOW -->
+    <div class="now-block">
+      <div class="now-label">▶ Right now</div>
+      <span class="now-emoji" id="now-emoji">⏳</span>
+      <div class="now-activity" id="now-activity">Loading...</div>
+      <div class="now-time" id="now-time"></div>
+      <div class="progress-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+      <div class="progress-label">
+        <span id="progress-start">--:--</span>
+        <span id="progress-pct">0%</span>
+        <span id="progress-end">--:--</span>
+      </div>
+    </div>
+
+    <!-- Food NOW -->
+    <div class="food-block">
+      <div class="food-label">🍽 Eat now / next</div>
+      <div class="food-slot-tag" id="food-slot-tag">Breakfast</div>
+      <div class="food-name" id="food-name">–</div>
+      <ul class="food-ings" id="food-ings"></ul>
+      <div class="food-hint" id="food-hint"></div>
+      <button class="penny-btn" onclick="openModal()">🛒 Buy at Penny</button>
+    </div>
+  </div>
+
+  <!-- Meals mini row -->
+  <div class="meals-row" id="meals-row"></div>
+
+  <div class="divider"></div>
+
+  <div class="section-title">This week · Week <span id="week-num">1</span></div>
+  <div class="schedule-grid" id="schedule-grid"></div>
+
+  <footer class="footer">
+    <span>Auto-updates every second</span>
+    <span>3-week activity rotation · Week 1 food plan</span>
+  </footer>
+</div>
+
+<!-- Penny Modal -->
+<div class="modal-overlay hidden" id="modal-overlay" onclick="closeOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-head">
+      <span class="penny-logo">PENNY</span>
+      <div>
+        <div class="modal-title">Shopping List</div>
+        <div class="modal-sub">Today's ingredients · tap to check off</div>
+      </div>
+    </div>
+    <div class="modal-day" id="modal-day">Monday</div>
+    <div id="modal-content"></div>
+    <div class="modal-foot">
+      <button class="modal-btn btn-secondary" onclick="uncheckAll()">Reset</button>
+      <button class="modal-btn btn-primary" id="copy-btn" onclick="copyList()">📋 Copy list</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── Constants ────────────────────────────────────────────────────────────────
+const DAYS       = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const DAYS_SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+const META = {
+  'Running':         {emoji:'🏃',  color:'morning'},
+  'Boxing bag':      {emoji:'🥊',  color:'morning'},
+  'Strength':        {emoji:'🏋️', color:'morning'},
+  'Work':            {emoji:'💼',  color:'work-text'},
+  'Theatre':         {emoji:'🎭',  color:'evening'},
+  'Theatre courses': {emoji:'🎬',  color:'evening'},
+  'Programming':     {emoji:'💻',  color:'evening'},
+  'Lectures':        {emoji:'📚',  color:'late'},
+  'Social':          {emoji:'🤝',  color:'late'},
+  'Rest':            {emoji:'😴',  color:'rest-text'},
+  'Sleep':           {emoji:'🌙',  color:'rest-text'},
+  'Free time':       {emoji:'☕',  color:'rest-text'},
+};
+
+const RU = {
+  'Бег':'Running','Боксёрская груша':'Boxing bag','Силовая':'Strength',
+  'Театр':'Theatre','Театральные курсы':'Theatre courses','Программирование':'Programming',
+  'Лекции':'Lectures','Социалка':'Social','Отдых':'Rest',
+};
+
+// ─── Food data (dayKey 1=Mon..7=Sun) ─────────────────────────────────────────
+const FOOD = {
+  1:{
+    breakfast:   {slot:'Breakfast',   time:'06:30–07:00',name:'Skyr Oat Bowl',          ings:['PENNY Skyr','Oats','Frozen berries']},
+    middaySnack: {slot:'Midday Snack',time:'11:00–11:30',name:'Eggs and Banana',         ings:['Boiled eggs','Banana']},
+    lunch:       {slot:'Lunch',       time:'13:00–13:30',name:'Grilled Chicken Rice Bowl',ings:['Chicken breast','Rice','Broccoli','Soy sauce']},
+    dinner:      {slot:'Dinner',      time:'19:00–19:30',name:'Salmon Vegetable Bowl',   ings:['Salmon fillet','Zucchini','Broccoli','Carrots']},
+  },
+  2:{
+    breakfast:   {slot:'Breakfast',   time:'06:30–07:00',name:'Egg Spinach Wrap',        ings:['Eggs','Whole grain wrap','Spinach']},
+    middaySnack: {slot:'Midday Snack',time:'11:00–11:30',name:'Cottage Cheese Cucumber', ings:['Cottage cheese','Cucumber','Pepper','Salt']},
+    lunch:       {slot:'Lunch',       time:'13:00–13:30',name:'Turkey Vegetable Plate',  ings:['Turkey breast','Frozen mixed vegetables','Mustard']},
+    dinner:      {slot:'Dinner',      time:'19:00–19:30',name:'Tuna Tomato Wrap',        ings:['Tuna can in water','Wraps','Tomatoes','Cucumber']},
+  },
+  3:{
+    breakfast:   {slot:'Breakfast',   time:'06:30–07:00',name:'Banana Quark Bowl',       ings:['Quark','Banana','Cinnamon']},
+    middaySnack: {slot:'Midday Snack',time:'11:00–11:30',name:'Protein Pudding Almond',  ings:['Protein pudding','Almonds']},
+    lunch:       {slot:'Lunch',       time:'13:00–13:30',name:'Lean Beef Rice Bowl',     ings:['Lean minced beef','Rice','Broccoli']},
+    dinner:      {slot:'Dinner',      time:'19:00–19:30',name:'White Fish Green Beans',  ings:['White fish','Green beans','Yogurt sauce']},
+  },
+  4:{
+    breakfast:   {slot:'Breakfast',   time:'06:30–07:00',name:'Mushroom Omelette',       ings:['Eggs','Mushrooms','Spinach']},
+    middaySnack: {slot:'Midday Snack',time:'11:00–11:30',name:'Berry Skyr',              ings:['Skyr','Frozen berries']},
+    lunch:       {slot:'Lunch',       time:'13:00–13:30',name:'Chicken Wraps',           ings:['Chicken breast','Wraps','Tomatoes','Low-calorie sauce']},
+    dinner:      {slot:'Dinner',      time:'19:00–19:30',name:'Turkey Rice Broccoli',    ings:['Turkey breast','Rice','Broccoli']},
+  },
+  5:{
+    breakfast:   {slot:'Breakfast',   time:'06:30–07:00',name:'Protein Yogurt Oats Bowl',ings:['Protein yogurt','Oats','Berries']},
+    middaySnack: {slot:'Midday Snack',time:'11:00–11:30',name:'Eggs and Apple',          ings:['Boiled eggs','Apple']},
+    lunch:       {slot:'Lunch',       time:'13:00–13:30',name:'Salmon Rice Bowl',        ings:['Salmon fillet','Rice','Vegetables']},
+    dinner:      {slot:'Dinner',      time:'19:00–19:30',name:'Lean Beef Green Beans',   ings:['Lean beef','Green beans','Cucumber']},
+  },
+  6:{
+    breakfast:   {slot:'Breakfast',   time:'08:00–08:30',name:'Cottage Cheese Banana Bowl',ings:['Cottage cheese','Banana','Cinnamon']},
+    middaySnack: {slot:'Midday Snack',time:'12:00–12:30',name:'Tuna Cucumber Snack',     ings:['Tuna can','Cucumber']},
+    lunch:       {slot:'Lunch',       time:'14:00–14:30',name:'Chicken Rice Broccoli',   ings:['Chicken breast','Rice','Broccoli']},
+    dinner:      {slot:'Dinner',      time:'19:00–19:30',name:'Turkey Tomato Wrap',      ings:['Turkey breast','Wraps','Tomatoes','Cucumber']},
+  },
+  7:{
+    breakfast:   {slot:'Breakfast',   time:'08:00–08:30',name:'Skyr Berry Bowl',         ings:['Skyr','Oats','Berries']},
+    middaySnack: {slot:'Midday Snack',time:'12:00–12:30',name:'Protein Pudding Banana',  ings:['Protein pudding','Banana']},
+    lunch:       {slot:'Lunch',       time:'14:00–14:30',name:'Lean Beef Rice Plate',    ings:['Lean beef patties','Rice','Broccoli']},
+    dinner:      {slot:'Dinner',      time:'19:00–19:30',name:'Fish Vegetable Plate',    ings:['White fish','Spinach','Mixed vegetables']},
+  },
+};
+
+const MEAL_ORDER = [
+  {key:'breakfast',   emoji:'🥣', label:'Breakfast',    from:0,      to:9*60},
+  {key:'middaySnack', emoji:'🍌', label:'Midday Snack', from:9*60,   to:12*60},
+  {key:'lunch',       emoji:'🍗', label:'Lunch',        from:12*60,  to:17*60},
+  {key:'dinner',      emoji:'🥘', label:'Dinner',       from:17*60,  to:24*60},
+];
+
+function getCurrentMealKey(nowMins) {
+  for (const m of MEAL_ORDER) if (nowMins>=m.from && nowMins<m.to) return m.key;
+  return 'dinner';
+}
+
+// ─── Activity schedule ────────────────────────────────────────────────────────
+const SCHED = [
+  {1:{m:'Бег',e1:'Театр',e2:'Программирование'},2:{m:'Боксёрская груша',e1:'Театральные курсы',e2:'Отдых'},3:{m:'Бег',e1:'Лекции',e2:'Театр'},4:{m:'Боксёрская груша',e1:'Программирование',e2:'Лекции'},5:{m:'Силовая',e1:'Социалка',e2:'Социалка'},6:{m:'Боксёрская груша',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
+  {1:{m:'Бег',e1:'Театр',e2:'Программирование'},2:{m:'Бег',e1:'Театральные курсы',e2:'Отдых'},3:{m:'Бег',e1:'Лекции',e2:'Театр'},4:{m:'Боксёрская груша',e1:'Программирование',e2:'Лекции'},5:{m:'Силовая',e1:'Социалка',e2:'Социалка'},6:{m:'Бег',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
+  {1:{m:'Силовая',e1:'Театр',e2:'Программирование'},2:{m:'Силовая',e1:'Театральные курсы',e2:'Отдых'},3:{m:'Силовая',e1:'Лекции',e2:'Театр'},4:{m:'Бег',e1:'Программирование',e2:'Лекции'},5:{m:'Боксёрская груша',e1:'Социалка',e2:'Социалка'},6:{m:'Силовая',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
+];
+
+const ANCHOR = new Date('2025-01-06T00:00:00');
+function getWeekIdx(date) {
+  const d=new Date(date); d.setHours(0,0,0,0);
+  const diff=Math.floor((d-ANCHOR)/(7*864e5));
+  return ((diff%3)+3)%3;
+}
+function jsDay2key(d) { return d===0?7:d; }
+function t2m(h,m) { return h*60+m; }
+function m2s(mins) { const h=Math.floor(mins/60)%24,m=mins%60; return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`; }
+
+function getSlots(wIdx, dk) {
+  const d=SCHED[wIdx][dk], wd=dk>=1&&dk<=5;
+  const s=[];
+  s.push({s:[7,0],e:[8,30],label:RU[d.m]||d.m,type:'morning'});
+  if(wd){s.push({s:[8,30],e:[9,0],label:'Free time',type:'free'});s.push({s:[9,0],e:[18,0],label:'Work',type:'work'});s.push({s:[18,0],e:[18,30],label:'Free time',type:'free'});}
+  else  {s.push({s:[8,30],e:[18,30],label:'Free time',type:'free'});}
+  s.push({s:[18,30],e:[20,0],label:RU[d.e1]||d.e1,type:'evening'});
+  s.push({s:[20,0],e:[21,30],label:RU[d.e2]||d.e2,type:'late'});
+  s.push({s:[21,30],e:[24,0],label:'Sleep',type:'sleep'});
+  s.push({s:[0,0],e:[7,0],label:'Sleep',type:'sleep'});
+  return s;
+}
+
+function curSlot(slots,nowM) {
+  for(const sl of slots){const s=t2m(...sl.s),e=t2m(...sl.e);if(e===0)continue;if(s<e&&nowM>=s&&nowM<e)return sl;}
+  return slots[slots.length-1];
+}
+
+function futureSlots(slots,nowM) {
+  return slots.filter(sl=>{const s=t2m(...sl.s),e=t2m(...sl.e);return e!==0&&s>nowM&&sl.type!=='sleep';}).slice(0,3);
+}
+
+// ─── Modal state ──────────────────────────────────────────────────────────────
+let ticked = {};
+
+function openModal() {
+  const now=new Date(), jsD=now.getDay(), dk=jsDay2key(jsD), meals=FOOD[dk];
+  if(!meals)return;
+  document.getElementById('modal-day').textContent=`${DAYS[jsD]} · Full day food plan`;
+  let html='';
+  MEAL_ORDER.forEach(mo=>{
+    const meal=meals[mo.key];
+    html+=`<div class="shop-section"><div class="shop-section-title">${mo.emoji} ${mo.label} · ${meal.time} — ${meal.name}</div>`;
+    meal.ings.forEach(ing=>{
+      const id=`${mo.key}__${ing}`;
+      html+=`<div class="shop-item${ticked[id]?' ticked':''}" onclick="tick(this,'${id}')"><div class="shop-check"></div><span class="shop-name">${ing}</span><span class="shop-for">${mo.label}</span></div>`;
+    });
+    html+='</div>';
+  });
+  document.getElementById('modal-content').innerHTML=html;
+  // re-apply check marks from state
+  Object.keys(ticked).forEach(id=>{
+    if(!ticked[id])return;
+    const el=document.querySelector(`.shop-item[onclick*="${CSS.escape(id)}"]`);
+    if(el){el.classList.add('ticked');el.querySelector('.shop-check').innerHTML='<span style="font-size:10px;color:#000">✓</span>';}
+  });
+  document.getElementById('modal-overlay').classList.remove('hidden');
+}
+
+function tick(el,id) {
+  ticked[id]=!ticked[id];
+  el.classList.toggle('ticked',ticked[id]);
+  el.querySelector('.shop-check').innerHTML=ticked[id]?'<span style="font-size:10px;color:#000">✓</span>':'';
+}
+
+function closeModal() { document.getElementById('modal-overlay').classList.add('hidden'); }
+function closeOutside(e) { if(e.target===document.getElementById('modal-overlay'))closeModal(); }
+
+function uncheckAll() {
+  ticked={};
+  document.querySelectorAll('.shop-item').forEach(el=>{
+    el.classList.remove('ticked');
+    el.querySelector('.shop-check').innerHTML='';
+  });
+}
+
+function copyList() {
+  const now=new Date(),dk=jsDay2key(now.getDay()),meals=FOOD[dk];
+  let txt=`🛒 Penny Shopping — ${DAYS[now.getDay()]}\n\n`;
+  MEAL_ORDER.forEach(mo=>{
+    const meal=meals[mo.key];
+    txt+=`${mo.emoji} ${mo.label}: ${meal.name}\n`;
+    meal.ings.forEach(i=>txt+=`  – ${i}\n`);
+    txt+='\n';
+  });
+  navigator.clipboard.writeText(txt).then(()=>{
+    const btn=document.getElementById('copy-btn');
+    btn.textContent='✓ Copied!'; setTimeout(()=>btn.textContent='📋 Copy list',2200);
+  });
+}
+
+// ─── Render ───────────────────────────────────────────────────────────────────
+function fmt2(n){return String(n).padStart(2,'0');}
+let gridDone=false;
+let lastFoodUpdate = 0;
+
+function update() {
+  const now=new Date();
+  const h=now.getHours(),mi=now.getMinutes(),s=now.getSeconds();
+  const nowM=h*60+mi, jsD=now.getDay(), dk=jsDay2key(jsD), wIdx=getWeekIdx(now);
+
+  // Clock
+  document.getElementById('live-time').textContent=`${fmt2(h)}:${fmt2(mi)}:${fmt2(s)}`;
+  document.getElementById('live-date').textContent=`${DAYS[jsD]} · ${now.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}`;
+  document.getElementById('week-badge').textContent=`Week ${wIdx+1} · 3-week cycle`;
+  document.getElementById('week-num').textContent=wIdx+1;
+
+  // Activity slot
+  const slots=getSlots(wIdx,dk), cur=curSlot(slots,nowM);
+  const meta=META[cur.label]||{emoji:'⏰',color:''};
+  document.getElementById('now-emoji').textContent=meta.emoji;
+  document.getElementById('now-activity').textContent=cur.label;
+  const ss=t2m(...cur.s),se=t2m(...cur.e);
+  const pct=Math.min(100,Math.max(0,Math.round(((nowM-ss)/(se-ss))*100)));
+  const rem=se-nowM;
+  document.getElementById('now-time').textContent=`${m2s(ss)} – ${m2s(se)} · ${rem>=60?`${Math.floor(rem/60)}h ${rem%60}m`:rem+'m'} remaining`;
+  document.getElementById('progress-bar').style.width=pct+'%';
+  document.getElementById('progress-start').textContent=m2s(ss);
+  document.getElementById('progress-end').textContent=m2s(se);
+  document.getElementById('progress-pct').textContent=pct+'%';
+
+  // Food block
+	const mealKey = getCurrentMealKey(nowM);
+	const dayMeals = FOOD[dk];
+
+	if(dayMeals && (Date.now() - lastFoodUpdate > 5 * 60 * 1000)) {
+
+	  const meal = dayMeals[mealKey];
+
+	  document.getElementById('food-slot-tag').textContent = meal.slot;
+	  document.getElementById('food-name').textContent = meal.name;
+	  document.getElementById('food-ings').innerHTML =
+		meal.ings.map(i => `<li>${i}</li>`).join('');
+
+	  document.getElementById('food-hint').textContent =
+		`Suggested time: ${meal.time}`;
+
+	  lastFoodUpdate = Date.now();
+	}
+
+  // Meals mini row
+  const mrow=document.getElementById('meals-row');
+  mrow.innerHTML=MEAL_ORDER.map(mo=>{
+    const meal=dayMeals?dayMeals[mo.key]:null;
+    const isActive=mo.key===mealKey, isDone=nowM>=mo.to;
+    return meal?`<div class="meal-mini${isActive?' active':''}${isDone?' done':''}" data-key="${mo.key}" onclick="pickMeal('${mo.key}',${dk})">
+      ${isActive?'<div class="meal-mini-dot"></div>':''}
+      <div class="meal-mini-time">${mo.emoji} ${meal.time}</div>
+      <div class="meal-mini-label">${mo.label}</div>
+      <div class="meal-mini-name">${meal.name}</div>
+    </div>`:'';
+  }).join('');
+
+  // Week grid once
+  if(!gridDone){renderGrid(wIdx,jsD);gridDone=true;}
+}
+
+function pickMeal(key,dk){
+  const meal=FOOD[dk]?.[key]; if(!meal)return;
+  document.getElementById('food-slot-tag').textContent=meal.slot;
+  document.getElementById('food-name').textContent=meal.name;
+  document.getElementById('food-ings').innerHTML=meal.ings.map(i=>`<li>${i}</li>`).join('');
+  document.getElementById('food-hint').textContent=`Suggested time: ${meal.time}`;
+  // highlight selected card
+  document.querySelectorAll('.meal-mini').forEach(el=>{
+    el.classList.toggle('active', el.dataset.key===key);
+  });
+}
+
+function renderGrid(wIdx,todayJsD){
+  const grid=document.getElementById('schedule-grid');
+  grid.innerHTML='';
+  [1,2,3,4,5,6,7].forEach(dk=>{
+    const jsD=dk===7?0:dk, isToday=jsD===todayJsD;
+    const d=SCHED[wIdx][dk], wd=dk>=1&&dk<=5, dm=FOOD[dk];
+    const card=document.createElement('div');
+    card.className='day-card'+(isToday?' today':'');
+    card.innerHTML=`
+      <div class="day-name">${DAYS_SHORT[jsD]}${isToday?' ◀':''}</div>
+      <div class="day-slot"><span class="day-slot-time">07:00–08:30</span><span class="day-slot-name">${META[RU[d.m]]?.emoji||'💪'} ${RU[d.m]||d.m}</span></div>
+      ${wd?`<div class="day-slot"><span class="day-slot-time">09:00–18:00</span><span class="day-slot-name" style="color:var(--work-text)">💼 Work</span></div>`:''}
+      <div class="day-slot"><span class="day-slot-time">18:30–20:00</span><span class="day-slot-name">${META[RU[d.e1]]?.emoji||'🎯'} ${RU[d.e1]||d.e1}</span></div>
+      <div class="day-slot"><span class="day-slot-time">20:00–21:30</span><span class="day-slot-name">${META[RU[d.e2]]?.emoji||'📖'} ${RU[d.e2]||d.e2}</span></div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+update();
+setInterval(update,1000);
+</script>
+</body>
+</html>
