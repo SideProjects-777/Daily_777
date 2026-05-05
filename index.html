@@ -322,15 +322,18 @@ function getCurrentMealKey(nowMins) {
 
 // ─── Activity schedule ────────────────────────────────────────────────────────
 const SCHED = [
-  {1:{m:'Бег',e1:'Театр',e2:'Программирование'},2:{m:'Боксёрская груша',e1:'Театральные курсы',e2:'Отдых'},3:{m:'Бег',e1:'Лекции',e2:'Театр'},4:{m:'Боксёрская груша',e1:'Программирование',e2:'Лекции'},5:{m:'Силовая',e1:'Социалка',e2:'Социалка'},6:{m:'Боксёрская груша',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
-  {1:{m:'Бег',e1:'Театр',e2:'Программирование'},2:{m:'Бег',e1:'Театральные курсы',e2:'Отдых'},3:{m:'Бег',e1:'Лекции',e2:'Театр'},4:{m:'Боксёрская груша',e1:'Программирование',e2:'Лекции'},5:{m:'Силовая',e1:'Социалка',e2:'Социалка'},6:{m:'Бег',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
-  {1:{m:'Силовая',e1:'Театр',e2:'Программирование'},2:{m:'Силовая',e1:'Театральные курсы',e2:'Отдых'},3:{m:'Силовая',e1:'Лекции',e2:'Театр'},4:{m:'Бег',e1:'Программирование',e2:'Лекции'},5:{m:'Боксёрская груша',e1:'Социалка',e2:'Социалка'},6:{m:'Силовая',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
+  {1:{m:'Бег',e1:'Театр',e2:'Программирование'},2:{m:'Боксёрская груша',e1:'Театральные курсы',e2:'Программирование'},3:{m:'Бег',e1:'Лекции',e2:'Театр'},4:{m:'Боксёрская груша',e1:'Программирование',e2:'Лекции'},5:{m:'Силовая',e1:'Социалка',e2:'Лекции'},6:{m:'Боксёрская груша',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
+  {1:{m:'Бег',e1:'Театр',e2:'Программирование'},2:{m:'Бег',e1:'Театральные курсы',e2:'Программирование'},3:{m:'Бег',e1:'Лекции',e2:'Театр'},4:{m:'Боксёрская груша',e1:'Программирование',e2:'Лекции'},5:{m:'Силовая',e1:'Социалка',e2:'Лекции'},6:{m:'Бег',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
+  {1:{m:'Силовая',e1:'Театр',e2:'Программирование'},2:{m:'Силовая',e1:'Театральные курсы',e2:'Программирование'},3:{m:'Силовая',e1:'Лекции',e2:'Театр'},4:{m:'Бег',e1:'Программирование',e2:'Лекции'},5:{m:'Боксёрская груша',e1:'Социалка',e2:'Лекции'},6:{m:'Силовая',e1:'Социалка',e2:'Социалка'},7:{m:'Отдых',e1:'Театр',e2:'Лекции'}},
 ];
 
-const ANCHOR = new Date('2025-01-06T00:00:00');
+const ANCHOR = new Date('2025-01-06T00:00:00'); // a known Monday = start of Week 1
 function getWeekIdx(date) {
   const d=new Date(date); d.setHours(0,0,0,0);
-  const diff=Math.floor((d-ANCHOR)/(7*864e5));
+  // rewind to Monday of this week so Sun belongs to the same week as Mon
+  const dow=(d.getDay()+6)%7; // Mon=0 … Sun=6
+  d.setDate(d.getDate()-dow);
+  const diff=Math.round((d-ANCHOR)/(7*864e5));
   return ((diff%3)+3)%3;
 }
 function jsDay2key(d) { return d===0?7:d; }
@@ -421,7 +424,6 @@ function copyList() {
 // ─── Render ───────────────────────────────────────────────────────────────────
 function fmt2(n){return String(n).padStart(2,'0');}
 let gridDone=false;
-let lastFoodUpdate = 0;
 
 function update() {
   const now=new Date();
@@ -449,23 +451,14 @@ function update() {
   document.getElementById('progress-pct').textContent=pct+'%';
 
   // Food block
-	const mealKey = getCurrentMealKey(nowM);
-	const dayMeals = FOOD[dk];
-
-	if(dayMeals && (Date.now() - lastFoodUpdate > 5 * 60 * 1000)) {
-
-	  const meal = dayMeals[mealKey];
-
-	  document.getElementById('food-slot-tag').textContent = meal.slot;
-	  document.getElementById('food-name').textContent = meal.name;
-	  document.getElementById('food-ings').innerHTML =
-		meal.ings.map(i => `<li>${i}</li>`).join('');
-
-	  document.getElementById('food-hint').textContent =
-		`Suggested time: ${meal.time}`;
-
-	  lastFoodUpdate = Date.now();
-	}
+  const mealKey=getCurrentMealKey(nowM), dayMeals=FOOD[dk];
+  if(dayMeals){
+    const meal=dayMeals[mealKey];
+    document.getElementById('food-slot-tag').textContent=meal.slot;
+    document.getElementById('food-name').textContent=meal.name;
+    document.getElementById('food-ings').innerHTML=meal.ings.map(i=>`<li>${i}</li>`).join('');
+    document.getElementById('food-hint').textContent=`Suggested time: ${meal.time}`;
+  }
 
   // Meals mini row
   const mrow=document.getElementById('meals-row');
