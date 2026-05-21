@@ -499,10 +499,10 @@ function renderGrid(wIdx,todayJsD){
     card.className='day-card'+(isToday?' today':'');
     card.innerHTML=`
       <div class="day-name">${DAYS_SHORT[jsD]}${isToday?' ◀':''}</div>
-      <div class="day-slot"><span class="day-slot-time">07:00–08:30</span><span class="day-slot-name">${META[RU[d.m]]?.emoji||'💪'} ${RU[d.m]||d.m}</span></div>
       ${wd?`<div class="day-slot"><span class="day-slot-time">09:00–18:00</span><span class="day-slot-name" style="color:var(--work-text)">💼 Work</span></div>`:''}
       <div class="day-slot"><span class="day-slot-time">18:30–20:00</span><span class="day-slot-name">${META[RU[d.e1]]?.emoji||'🎯'} ${RU[d.e1]||d.e1}</span></div>
       <div class="day-slot"><span class="day-slot-time">20:00–21:30</span><span class="day-slot-name">${META[RU[d.e2]]?.emoji||'📖'} ${RU[d.e2]||d.e2}</span></div>
+      <div class="day-slot"><span class="day-slot-time">07:00–08:30</span><span class="day-slot-name">${META[RU[d.m]]?.emoji||'💪'} ${RU[d.m]||d.m}</span></div>
     `;
     grid.appendChild(card);
   });
