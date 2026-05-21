@@ -341,13 +341,22 @@ function t2m(h,m) { return h*60+m; }
 function m2s(mins) { const h=Math.floor(mins/60)%24,m=mins%60; return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`; }
 
 function getSlots(wIdx, dk) {
-  const d=SCHED[wIdx][dk], wd=dk>=1&&dk<=5;
+  const d=SCHED[wIdx][dk], wd=dk>=1&&dk<=5, weekend=dk===6||dk===7;
   const s=[];
-  s.push({s:[7,0],e:[8,30],label:RU[d.m]||d.m,type:'morning'});
-  if(wd){s.push({s:[8,30],e:[9,0],label:'Free time',type:'free'});s.push({s:[9,0],e:[18,0],label:'Work',type:'work'});s.push({s:[18,0],e:[18,30],label:'Free time',type:'free'});}
-  else  {s.push({s:[8,30],e:[18,30],label:'Free time',type:'free'});}
-  s.push({s:[18,30],e:[20,0],label:RU[d.e1]||d.e1,type:'evening'});
-  s.push({s:[20,0],e:[21,30],label:RU[d.e2]||d.e2,type:'late'});
+  // weekdays: e2 at 07:00, sport at 20:00; weekends: sport at 07:00 as before
+  if(weekend){
+    s.push({s:[7,0],e:[8,30],label:RU[d.m]||d.m,type:'morning'});
+    s.push({s:[8,30],e:[18,30],label:'Free time',type:'free'});
+    s.push({s:[18,30],e:[20,0],label:RU[d.e1]||d.e1,type:'evening'});
+    s.push({s:[20,0],e:[21,30],label:RU[d.e2]||d.e2,type:'late'});
+  } else {
+    s.push({s:[7,0],e:[8,30],label:RU[d.e2]||d.e2,type:'evening'});
+    s.push({s:[8,30],e:[9,0],label:'Free time',type:'free'});
+    s.push({s:[9,0],e:[18,0],label:'Work',type:'work'});
+    s.push({s:[18,0],e:[18,30],label:'Free time',type:'free'});
+    s.push({s:[18,30],e:[20,0],label:RU[d.e1]||d.e1,type:'evening'});
+    s.push({s:[20,0],e:[21,30],label:RU[d.m]||d.m,type:'morning'});
+  }
   s.push({s:[21,30],e:[24,0],label:'Sleep',type:'sleep'});
   s.push({s:[0,0],e:[7,0],label:'Sleep',type:'sleep'});
   return s;
@@ -494,15 +503,21 @@ function renderGrid(wIdx,todayJsD){
   grid.innerHTML='';
   [1,2,3,4,5,6,7].forEach(dk=>{
     const jsD=dk===7?0:dk, isToday=jsD===todayJsD;
-    const d=SCHED[wIdx][dk], wd=dk>=1&&dk<=5, dm=FOOD[dk];
+    const d=SCHED[wIdx][dk], wd=dk>=1&&dk<=5, weekend=dk===6||dk===7, dm=FOOD[dk];
     const card=document.createElement('div');
     card.className='day-card'+(isToday?' today':'');
     card.innerHTML=`
       <div class="day-name">${DAYS_SHORT[jsD]}${isToday?' ◀':''}</div>
-      ${wd?`<div class="day-slot"><span class="day-slot-time">09:00–18:00</span><span class="day-slot-name" style="color:var(--work-text)">💼 Work</span></div>`:''}
-      <div class="day-slot"><span class="day-slot-time">18:30–20:00</span><span class="day-slot-name">${META[RU[d.e1]]?.emoji||'🎯'} ${RU[d.e1]||d.e1}</span></div>
-      <div class="day-slot"><span class="day-slot-time">20:00–21:30</span><span class="day-slot-name">${META[RU[d.e2]]?.emoji||'📖'} ${RU[d.e2]||d.e2}</span></div>
-      <div class="day-slot"><span class="day-slot-time">07:00–08:30</span><span class="day-slot-name">${META[RU[d.m]]?.emoji||'💪'} ${RU[d.m]||d.m}</span></div>
+      ${weekend ? `
+        <div class="day-slot"><span class="day-slot-time">07:00–08:30</span><span class="day-slot-name">${META[RU[d.m]]?.emoji||'💪'} ${RU[d.m]||d.m}</span></div>
+        <div class="day-slot"><span class="day-slot-time">18:30–20:00</span><span class="day-slot-name">${META[RU[d.e1]]?.emoji||'🎯'} ${RU[d.e1]||d.e1}</span></div>
+        <div class="day-slot"><span class="day-slot-time">20:00–21:30</span><span class="day-slot-name">${META[RU[d.e2]]?.emoji||'📖'} ${RU[d.e2]||d.e2}</span></div>
+      ` : `
+        <div class="day-slot"><span class="day-slot-time">07:00–08:30</span><span class="day-slot-name">${META[RU[d.e2]]?.emoji||'📖'} ${RU[d.e2]||d.e2}</span></div>
+        <div class="day-slot"><span class="day-slot-time">09:00–18:00</span><span class="day-slot-name" style="color:var(--work-text)">💼 Work</span></div>
+        <div class="day-slot"><span class="day-slot-time">18:30–20:00</span><span class="day-slot-name">${META[RU[d.e1]]?.emoji||'🎯'} ${RU[d.e1]||d.e1}</span></div>
+        <div class="day-slot"><span class="day-slot-time">20:00–21:30</span><span class="day-slot-name">${META[RU[d.m]]?.emoji||'💪'} ${RU[d.m]||d.m}</span></div>
+      `}
     `;
     grid.appendChild(card);
   });
