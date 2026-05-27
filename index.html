@@ -198,94 +198,86 @@ const DAYS_SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 // color classes: 'accent' | 'work' | 'sport' | 'muted' | '' (default text)
 
 const WEEK = {
-  1: { // MONDAY — Recovery + Deep Work
-    theme: 'Recovery + Deep Work',
+  1: { // MONDAY — Work + Recovery Walk + Deep Work
+    theme: 'Work · Walk · Deep Work',
     slots: [
-      {s:[6,0],  e:[7,0],  label:'Quiet morning · coffee & planning', emoji:'☕', color:'muted'},
-      {s:[7,0],  e:[9,0],  label:'Deep Work: Product',                emoji:'🧠', color:'accent'},
-      {s:[9,0],  e:[18,0], label:'Work',                              emoji:'💼', color:'work'},
-      {s:[18,30],e:[20,0], label:'Walk / Mobility / Recovery',        emoji:'🚶', color:'sport'},
+      {s:[0,0],  e:[7,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[7,0],  e:[16,0], label:'Work',                              emoji:'💼', color:'work'},
+      {s:[16,0], e:[17,30],label:'Walk / Mobility / Recovery',        emoji:'🚶', color:'sport'},
+      {s:[17,30],e:[20,0], label:'Deep Work: Product',                emoji:'🧠', color:'accent'},
       {s:[20,0], e:[21,0], label:'Rest — no screens',                 emoji:'😴', color:'muted'},
-      {s:[21,0], e:[22,0], label:'Wind down',                         emoji:'🌙', color:'muted'},
-      {s:[22,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
-      {s:[0,0],  e:[6,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[21,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
     ]
   },
-  2: { // TUESDAY — Acting courses + Run
-    theme: 'Acting Courses + Run',
+  2: { // TUESDAY — Work + Run + Acting courses
+    theme: 'Work · Run · Acting Courses',
     slots: [
-      {s:[6,0],  e:[7,0],  label:'Wake up',                           emoji:'⏰', color:'muted'},
-      {s:[7,0],  e:[8,0],  label:'Run — steady state',                emoji:'🏃', color:'sport'},
-      {s:[8,0],  e:[9,0],  label:'Shower & breakfast',                emoji:'🍳', color:'muted'},
-      {s:[9,0],  e:[18,0], label:'Work',                              emoji:'💼', color:'work'},
-      {s:[19,0], e:[21,0], label:'Acting courses',                    emoji:'🎬', color:'accent'},
-      {s:[21,0], e:[22,0], label:'Decompression — shower & food',     emoji:'🧘', color:'muted'},
-      {s:[22,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
-      {s:[0,0],  e:[6,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[0,0],  e:[7,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[7,0],  e:[16,0], label:'Work',                              emoji:'💼', color:'work'},
+      {s:[16,0], e:[17,30],label:'Run — steady state',                emoji:'🏃', color:'sport'},
+      {s:[17,30],e:[18,0], label:'Shower & food',                     emoji:'🍳', color:'muted'},
+      {s:[18,0], e:[20,0], label:'Acting courses',                    emoji:'🎬', color:'accent'},
+      {s:[20,0], e:[21,0], label:'Decompression',                     emoji:'🧘', color:'muted'},
+      {s:[21,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
     ]
   },
-  3: { // WEDNESDAY — Heavy training + Career
-    theme: 'Heavy Training + Career',
+  3: { // WEDNESDAY — Work + Heavy training + Career
+    theme: 'Work · Heavy Training · Career',
     slots: [
-      {s:[6,0],  e:[7,0],  label:'Wake up',                           emoji:'⏰', color:'muted'},
-      {s:[7,0],  e:[9,0],  label:'Heavy training',                    emoji:'🏋️', color:'sport'},
-      {s:[9,0],  e:[18,0], label:'Work',                              emoji:'💼', color:'work'},
-      {s:[18,30],e:[20,0], label:'Job search / Interviews / LinkedIn', emoji:'💻', color:'accent'},
+      {s:[0,0],  e:[7,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[7,0],  e:[16,0], label:'Work',                              emoji:'💼', color:'work'},
+      {s:[16,0], e:[17,30],label:'Heavy training',                    emoji:'🏋️', color:'sport'},
+      {s:[17,30],e:[18,0], label:'Shower & food',                     emoji:'🍳', color:'muted'},
+      {s:[18,0], e:[20,0], label:'Job search / Interviews / LinkedIn', emoji:'💻', color:'accent'},
       {s:[20,0], e:[21,0], label:'Brain unload',                      emoji:'😴', color:'muted'},
-      {s:[21,0], e:[22,0], label:'Wind down',                         emoji:'🌙', color:'muted'},
-      {s:[22,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
-      {s:[0,0],  e:[6,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[21,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
     ]
   },
-  4: { // THURSDAY — Self Tape + Boxing
-    theme: 'Self Tape + Boxing',
+  4: { // THURSDAY — Work + Boxing + Self Tape
+    theme: 'Work · Boxing · Self Tape',
     slots: [
-      {s:[6,0],  e:[7,0],  label:'Wake up',                           emoji:'⏰', color:'muted'},
-      {s:[7,0],  e:[8,0],  label:'Boxing bag',                        emoji:'🥊', color:'sport'},
-      {s:[8,0],  e:[9,0],  label:'Shower & breakfast',                emoji:'🍳', color:'muted'},
-      {s:[9,0],  e:[18,0], label:'Work',                              emoji:'💼', color:'work'},
-      {s:[19,0], e:[20,30],label:'Self Tape / Scene recording',       emoji:'🎭', color:'accent'},
-      {s:[20,30],e:[21,0], label:'Review & short analysis',           emoji:'👁️', color:'muted'},
-      {s:[21,0], e:[22,0], label:'Wind down',                         emoji:'🌙', color:'muted'},
-      {s:[22,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
-      {s:[0,0],  e:[6,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[0,0],  e:[7,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[7,0],  e:[16,0], label:'Work',                              emoji:'💼', color:'work'},
+      {s:[16,0], e:[17,30],label:'Boxing bag',                        emoji:'🥊', color:'sport'},
+      {s:[17,30],e:[18,0], label:'Shower & food',                     emoji:'🍳', color:'muted'},
+      {s:[18,0], e:[19,30],label:'Self Tape / Scene recording',       emoji:'🎭', color:'accent'},
+      {s:[19,30],e:[20,0], label:'Review & short analysis',           emoji:'👁️', color:'muted'},
+      {s:[20,0], e:[21,0], label:'Wind down',                         emoji:'🌙', color:'muted'},
+      {s:[21,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
     ]
   },
-  5: { // FRIDAY — Heavy training + Product
-    theme: 'Heavy Training + Product',
+  5: { // FRIDAY — Work + Heavy training + Product
+    theme: 'Work · Heavy Training · Product',
     slots: [
-      {s:[6,0],  e:[7,0],  label:'Wake up',                           emoji:'⏰', color:'muted'},
-      {s:[7,0],  e:[9,0],  label:'Heavy training',                    emoji:'🏋️', color:'sport'},
-      {s:[9,0],  e:[18,0], label:'Work',                              emoji:'💼', color:'work'},
-      {s:[18,30],e:[21,0], label:'Product — 2nd main session',        emoji:'🧠', color:'accent'},
-      {s:[21,0], e:[22,0], label:'Stop. Wind down.',                  emoji:'🛑', color:'muted'},
-      {s:[22,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
-      {s:[0,0],  e:[6,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[0,0],  e:[7,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[7,0],  e:[16,0], label:'Work',                              emoji:'💼', color:'work'},
+      {s:[16,0], e:[17,30],label:'Heavy training',                    emoji:'🏋️', color:'sport'},
+      {s:[17,30],e:[18,0], label:'Shower & food',                     emoji:'🍳', color:'muted'},
+      {s:[18,0], e:[21,0], label:'Product — 2nd main session',        emoji:'🧠', color:'accent'},
+      {s:[21,0], e:[24,0], label:'Sleep',                             emoji:'🌙', color:'muted'},
     ]
   },
-  6: { // SATURDAY — Creative + Strategic
-    theme: 'Creative & Strategic Day',
+  6: { // SATURDAY — Work + Run + Acting practice
+    theme: 'Work · Run · Acting Practice',
     slots: [
-      {s:[8,0],  e:[9,0],  label:'Wake up — no alarm',                emoji:'🌅', color:'muted'},
-      {s:[9,0],  e:[10,0], label:'Run — long & easy',                 emoji:'🏃', color:'sport'},
-      {s:[10,0], e:[11,0], label:'Breakfast & relax',                 emoji:'☕', color:'muted'},
-      {s:[11,0], e:[13,0], label:'Script reading / Acting practice',  emoji:'🎭', color:'accent'},
-      {s:[13,0], e:[15,0], label:'Full rest — go outside',            emoji:'🌳', color:'muted'},
-      {s:[15,0], e:[17,0], label:'Optional: product / learning / prep',emoji:'📚', color:''},
-      {s:[17,0], e:[24,0], label:'Social life & rest',                emoji:'🤝', color:'muted'},
-      {s:[0,0],  e:[8,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[0,0],  e:[7,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[7,0],  e:[16,0], label:'Work',                              emoji:'💼', color:'work'},
+      {s:[16,0], e:[17,30],label:'Run — long & easy',                 emoji:'🏃', color:'sport'},
+      {s:[17,30],e:[18,0], label:'Shower & food',                     emoji:'🍳', color:'muted'},
+      {s:[18,0], e:[20,0], label:'Script reading / Acting practice',  emoji:'🎭', color:'accent'},
+      {s:[20,0], e:[24,0], label:'Social life & rest',                emoji:'🤝', color:'muted'},
     ]
   },
-  7: { // SUNDAY — System Recovery
-    theme: 'System Recovery',
+  7: { // SUNDAY — Work + Light sport + Weekly Review
+    theme: 'Work · Light Sport · Weekly Review',
     slots: [
-      {s:[9,0],  e:[10,0], label:'Wake up',                           emoji:'🌅', color:'muted'},
-      {s:[10,0], e:[11,0], label:'Light sport — walk / jog / stretch',emoji:'🚶', color:'sport'},
-      {s:[11,0], e:[16,0], label:'Low cognitive load — full rest',    emoji:'😴', color:'muted'},
-      {s:[16,0], e:[17,0], label:'Weekly Review',                     emoji:'📊', color:'accent'},
-      {s:[17,0], e:[18,0], label:'Week planning — max 3 priorities',  emoji:'📋', color:'accent'},
-      {s:[18,0], e:[24,0], label:'Full wind down',                    emoji:'🌙', color:'muted'},
-      {s:[0,0],  e:[9,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[0,0],  e:[7,0],  label:'Sleep',                             emoji:'🌙', color:'muted'},
+      {s:[7,0],  e:[16,0], label:'Work',                              emoji:'💼', color:'work'},
+      {s:[16,0], e:[17,30],label:'Light sport — walk / jog / stretch',emoji:'🚶', color:'sport'},
+      {s:[17,30],e:[18,0], label:'Shower & food',                     emoji:'🍳', color:'muted'},
+      {s:[18,0], e:[19,0], label:'Weekly Review',                     emoji:'📊', color:'accent'},
+      {s:[19,0], e:[20,0], label:'Week planning — max 3 priorities',  emoji:'📋', color:'accent'},
+      {s:[20,0], e:[24,0], label:'Full wind down',                    emoji:'🌙', color:'muted'},
     ]
   },
 };
