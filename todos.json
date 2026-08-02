@@ -1,0 +1,189 @@
+[
+  {
+    "day": "Monday",
+    "tasks": [
+      {
+        "title": "Listen to lecture",
+        "items": [
+          { "id": "mon_lec_1", "name": "System Design", "url": "https://dedalus.udemy.com/course/mastering-system-design-from-basics-to-cracking-interviews/", "completed": false }
+        ]
+      },
+      {
+        "title": "Coding task",
+        "items": [
+          { "id": "mon_cod_1", "name": "Upgrade mobile app", "completed": false },
+          { "id": "mon_cod_2", "name": "Leetcode 1 task", "completed": false }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": false }
+        ]
+      },
+      {
+        "title": "Boxing bag",
+        "items": [
+          { "id": "mon_box_1", "name": "Boxing training", "completed": false }
+        ]
+      },
+      {
+        "title": "Jogging",
+        "items": [
+          { "id": "mon_jog_1", "name": "Jogging session", "completed": false }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "tasks": [
+      {
+        "title": "Acting courses",
+        "items": [
+          { "id": "tue_act_1", "name": "Listen to the audio", "completed": false },
+          { "id": "tue_act_2", "name": "Introduction video", "completed": false },
+          { "id": "tue_act_3", "name": "Acting training watch", "completed": false }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
+        ]
+      },
+      {
+        "title": "Boxing bag",
+        "items": [
+          { "id": "tue_box_1", "name": "Boxing session", "completed": false }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "tasks": [
+      {
+        "title": "Listen to lecture",
+        "items": [
+          { "id": "wed_lec_1", "name": "AWS Cloud Architecture", "url": "https://dedalus.udemy.com/course/aws-java/learn/lecture/44883389#overview", "completed": false }
+        ]
+      },
+      {
+        "title": "Coding task",
+        "items": [
+          { "id": "wed_cod_1", "name": "Upgrade mobile app", "completed": false },
+          { "id": "wed_cod_2", "name": "Leetcode 1 task", "completed": false }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          { "id": "wed_job_1", "name": "Apply for 9 jobs", "completed": false }
+        ]
+      },
+      {
+        "title": "Boxing bag",
+        "items": [
+          { "id": "wed_box_1", "name": "Boxing training", "completed": false }
+        ]
+      },
+      {
+        "title": "Jogging",
+        "items": [
+          { "id": "wed_jog_1", "name": "Jogging session", "completed": false }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "tasks": [
+      {
+        "title": "Acting courses",
+        "items": [
+          { "id": "thu_act_1", "name": "Publish the video", "completed": false },
+          { "id": "thu_act_2", "name": "Find another video idea", "completed": false },
+          { "id": "thu_act_3", "name": "Acting training watch", "completed": false },
+          { "id": "thu_act_4", "name": "Write down the portfolio", "completed": false }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          { "id": "thu_job_1", "name": "Apply for 3 acting classes", "completed": false }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          { "id": "thu_hvy_1", "name": "Heavy training session", "completed": false }
+        ]
+      },
+      {
+        "title": "Boxing bag",
+        "items": [
+          { "id": "thu_box_1", "name": "Boxing session", "completed": false }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "tasks": [
+      {
+        "title": "Listen to lecture",
+        "items": [
+          { "id": "fri_lec_1", "name": "Certified Kubernetes Administrator", "url": "https://dedalus.udemy.com/course/certified-kubernetes-administrator", "completed": false }
+        ]
+      },
+      {
+        "title": "Coding task",
+        "items": [
+          { "id": "fri_cod_1", "name": "Leetcode 2 tasks", "completed": false }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          { "id": "fri_job_1", "name": "Apply for 9 jobs", "completed": false }
+        ]
+      },
+      {
+        "title": "Boxing bag",
+        "items": [
+          { "id": "fri_box_1", "name": "Boxing training", "completed": false }
+        ]
+      },
+      {
+        "title": "Jogging",
+        "items": [
+          { "id": "fri_jog_1", "name": "Jogging session", "completed": false }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "tasks": []
+  },
+  {
+    "day": "Sunday",
+    "tasks": []
+  },
+  {
+    "day": "General",
+    "tasks": [
+      {
+        "title": "General",
+        "items": [
+          { "id": "gen_1", "name": "Review weekly goals and progress", "completed": false },
+          { "id": "gen_2", "name": "Update LinkedIn profile", "completed": false },
+          { "id": "gen_3", "name": "Read 20 pages of a technical book", "completed": false },
+          { "id": "gen_4", "name": "Prepare portfolio piece", "completed": false },
+          { "id": "gen_5", "name": "Schedule dentist / doctor appointment", "completed": false }
+        ]
+      }
+    ]
+  }
+]
