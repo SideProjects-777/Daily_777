@@ -43,7 +43,8 @@
         "items": [
           { "id": "tue_act_1", "name": "Listen to the audio", "completed": false },
           { "id": "tue_act_2", "name": "Introduction video", "completed": false },
-          { "id": "tue_act_3", "name": "Acting training watch", "completed": false }
+          { "id": "tue_act_3", "name": "Acting training watch", "completed": false },
+          { "id": "tue_act_4", "name": "Find new video", "completed": false }
         ]
       },
       {
