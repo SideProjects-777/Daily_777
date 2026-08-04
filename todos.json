@@ -47,6 +47,12 @@
         ]
       },
       {
+        "title": "Apply for jobs",
+        "items": [
+          { "id": "tue_job_1", "name": "Apply for 9 jobs", "completed": false }
+        ]
+      },
+      {
         "title": "Heavy training",
         "items": [
           { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
