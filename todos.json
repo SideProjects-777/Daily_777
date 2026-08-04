@@ -5,7 +5,7 @@
       {
         "title": "Listen to lecture",
         "items": [
-          { "id": "mon_lec_1", "name": "System Design", "url": "https://dedalus.udemy.com/course/mastering-system-design-from-basics-to-cracking-interviews/", "completed": false }
+          { "id": "mon_lec_1", "name": "System Design", "url": "https://dedalus.udemy.com/course/mastering-system-design-from-basics-to-cracking-interviews/", "completed": true }
         ]
       },
       {
@@ -18,19 +18,19 @@
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": false }
+          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": true }
         ]
       },
       {
         "title": "Boxing bag",
         "items": [
-          { "id": "mon_box_1", "name": "Boxing training", "completed": false }
+          { "id": "mon_box_1", "name": "Boxing training", "completed": true }
         ]
       },
       {
         "title": "Jogging",
         "items": [
-          { "id": "mon_jog_1", "name": "Jogging session", "completed": false }
+          { "id": "mon_jog_1", "name": "Jogging session", "completed": true }
         ]
       }
     ]
