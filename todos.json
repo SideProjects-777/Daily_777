@@ -73,7 +73,7 @@
       {
         "title": "Listen to lecture",
         "items": [
-          { "id": "wed_lec_1", "name": "AWS Cloud Architecture", "url": "https://dedalus.udemy.com/course/aws-java/learn/lecture/44883389#overview", "completed": false }
+          { "id": "wed_lec_1", "name": "AWS Cloud Architecture", "url": "https://dedalus.udemy.com/course/aws-java/learn/lecture/44883389#overview", "completed": true }
         ]
       },
       {
@@ -118,19 +118,19 @@
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "thu_job_1", "name": "Apply for 3 acting classes", "completed": false }
+          { "id": "thu_job_1", "name": "Apply for 3 acting classes", "completed": true }
         ]
       },
       {
         "title": "Heavy training",
         "items": [
-          { "id": "thu_hvy_1", "name": "Heavy training session", "completed": false }
+          { "id": "thu_hvy_1", "name": "Heavy training session", "completed": true }
         ]
       },
       {
         "title": "Boxing bag",
         "items": [
-          { "id": "thu_box_1", "name": "Boxing session", "completed": false }
+          { "id": "thu_box_1", "name": "Boxing session", "completed": true }
         ]
       }
     ]
