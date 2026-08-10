@@ -12,25 +12,25 @@
         "title": "Coding task",
         "items": [
           { "id": "mon_cod_1", "name": "Upgrade mobile app", "completed": false },
-          { "id": "mon_cod_2", "name": "Leetcode 1 task", "completed": true }
+          { "id": "mon_cod_2", "name": "Leetcode 1 task", "completed": false }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": true }
+          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": false }
         ]
       },
       {
         "title": "Boxing bag",
         "items": [
-          { "id": "mon_box_1", "name": "Boxing training", "completed": true }
+          { "id": "mon_box_1", "name": "Boxing training", "completed": false }
         ]
       },
       {
         "title": "Jogging",
         "items": [
-          { "id": "mon_jog_1", "name": "Jogging session", "completed": true }
+          { "id": "mon_jog_1", "name": "Jogging session", "completed": false }
         ]
       }
     ]
@@ -41,10 +41,10 @@
       {
         "title": "Acting courses",
         "items": [
-          { "id": "tue_act_1", "name": "Listen to the audio", "completed": true },
-          { "id": "tue_act_2", "name": "Introduction video", "completed": true },
-          { "id": "tue_act_3", "name": "Acting training watch", "completed": true },
-          { "id": "tue_act_4", "name": "Find new video", "completed": true }
+          { "id": "tue_act_1", "name": "Listen to the audio", "completed": false },
+          { "id": "tue_act_2", "name": "Show reel", "completed": false },
+          { "id": "tue_act_3", "name": "Acting training watch", "completed": false },
+          { "id": "tue_act_4", "name": "Find new video", "completed": false }
         ]
       },
       {
@@ -56,7 +56,7 @@
       {
         "title": "Heavy training",
         "items": [
-          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": true }
+          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
         ]
       },
       {
@@ -80,19 +80,19 @@
         "title": "Coding task",
         "items": [
           { "id": "wed_cod_1", "name": "Upgrade mobile app", "completed": false },
-          { "id": "wed_cod_2", "name": "Leetcode 1 task", "completed": true }
+          { "id": "wed_cod_2", "name": "Leetcode 1 task", "completed": false }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "wed_job_1", "name": "Apply for 9 jobs", "completed": true }
+          { "id": "wed_job_1", "name": "Apply for 9 jobs", "completed": false }
         ]
       },
       {
         "title": "Boxing bag",
         "items": [
-          { "id": "wed_box_1", "name": "Boxing training", "completed": true }
+          { "id": "wed_box_1", "name": "Boxing training", "completed": false }
         ]
       },
       {
@@ -118,19 +118,19 @@
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "thu_job_1", "name": "Apply for 3 acting classes", "completed": true }
+          { "id": "thu_job_1", "name": "Apply for 3 acting classes", "completed": false }
         ]
       },
       {
         "title": "Heavy training",
         "items": [
-          { "id": "thu_hvy_1", "name": "Heavy training session", "completed": true }
+          { "id": "thu_hvy_1", "name": "Heavy training session", "completed": false }
         ]
       },
       {
         "title": "Boxing bag",
         "items": [
-          { "id": "thu_box_1", "name": "Boxing session", "completed": true }
+          { "id": "thu_box_1", "name": "Boxing session", "completed": false }
         ]
       }
     ]
