@@ -11,14 +11,14 @@
       {
         "title": "Coding task",
         "items": [
-          { "id": "mon_cod_1", "name": "Upgrade mobile app", "completed": false },
-          { "id": "mon_cod_2", "name": "Leetcode 1 task", "completed": false }
+          { "id": "mon_cod_1", "name": "Upgrade mobile app", "completed": true },
+          { "id": "mon_cod_2", "name": "Leetcode 1 task", "completed": true }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": false }
+          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": true }
         ]
       },
       {
