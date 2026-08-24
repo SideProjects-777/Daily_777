@@ -5,20 +5,20 @@
       {
         "title": "Listen to lecture",
         "items": [
-          { "id": "mon_lec_1", "name": "System Design", "url": "https://dedalus.udemy.com/course/mastering-system-design-from-basics-to-cracking-interviews/", "completed": true }
+          { "id": "mon_lec_1", "name": "System Design", "url": "https://dedalus.udemy.com/course/mastering-system-design-from-basics-to-cracking-interviews/", "completed": false }
         ]
       },
       {
         "title": "Coding task",
         "items": [
-          { "id": "mon_cod_1", "name": "Upgrade mobile app", "completed": true },
-          { "id": "mon_cod_2", "name": "Leetcode 1 task", "completed": true }
+          { "id": "mon_cod_1", "name": "Boxing app", "completed": false },
+          { "id": "mon_cod_2", "name": "Micro 1 preps", "completed": false }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "mon_job_1", "name": "Apply for 9 jobs", "completed": true }
+          { "id": "mon_job_1", "name": "Apply for entw jobs", "completed": false }
         ]
       },
       {
@@ -41,10 +41,9 @@
       {
         "title": "Acting courses",
         "items": [
-          { "id": "tue_act_1", "name": "Listen to the audio", "completed": false },
-          { "id": "tue_act_2", "name": "Show reel", "completed": false },
+          { "id": "tue_act_2", "name": "Website create", "completed": false },
           { "id": "tue_act_3", "name": "Acting training watch", "completed": false },
-          { "id": "tue_act_4", "name": "Find new video", "completed": false }
+          { "id": "tue_act_4", "name": "Make video stage-milk", "completed": false }
         ]
       },
       {
@@ -73,20 +72,20 @@
       {
         "title": "Listen to lecture",
         "items": [
-          { "id": "wed_lec_1", "name": "AWS Cloud Architecture", "url": "https://dedalus.udemy.com/course/aws-java/learn/lecture/44883389#overview", "completed": true }
+          { "id": "wed_lec_1", "name": "AWS Cloud Architecture", "url": "https://dedalus.udemy.com/course/aws-java/learn/lecture/44883389#overview", "completed": false }
         ]
       },
       {
         "title": "Coding task",
         "items": [
-          { "id": "wed_cod_1", "name": "Upgrade mobile app", "completed": false },
-          { "id": "wed_cod_2", "name": "Leetcode 1 task", "completed": false }
+          { "id": "wed_cod_1", "name": "Leetcode 1 task", "completed": false },
+          { "id": "wed_cod_2", "name": "Leetcode 2 task", "completed": false }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "wed_job_1", "name": "Apply for 9 jobs", "completed": false }
+          { "id": "wed_job_1", "name": "Apply for etnw jobs", "completed": false }
         ]
       },
       {
@@ -110,9 +109,8 @@
         "title": "Acting courses",
         "items": [
           { "id": "thu_act_1", "name": "Publish the video", "completed": false },
-          { "id": "thu_act_2", "name": "Find another video idea", "completed": false },
           { "id": "thu_act_3", "name": "Acting training watch", "completed": false },
-          { "id": "thu_act_4", "name": "Write down the portfolio", "completed": false }
+          { "id": "thu_act_4", "name": "Find a way to apply for foreign movies", "completed": false }
         ]
       },
       {
@@ -153,7 +151,7 @@
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "fri_job_1", "name": "Apply for 9 jobs", "completed": false }
+          { "id": "fri_job_1", "name": "Apply for etnw jobs", "completed": false }
         ]
       },
       {
@@ -184,11 +182,10 @@
       {
         "title": "General",
         "items": [
-          { "id": "gen_1", "name": "Review weekly goals and progress", "completed": false },
-          { "id": "gen_2", "name": "Update LinkedIn profile", "completed": false },
-          { "id": "gen_3", "name": "Read 20 pages of a technical book", "completed": false },
-          { "id": "gen_4", "name": "Prepare portfolio piece", "completed": false },
-          { "id": "gen_5", "name": "Schedule dentist / doctor appointment", "completed": false }
+          { "id": "gen_1", "name": "Tickets to Azerbaijan", "completed": false },
+          { "id": "gen_2", "name": "Apartment adjustments - prepare", "completed": false },
+          { "id": "gen_3", "name": "Diary", "completed": false },
+          { "id": "gen_5", "name": "Schedule doctor appointment", "completed": false }
         ]
       }
     ]
