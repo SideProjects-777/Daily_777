@@ -11,26 +11,38 @@
       {
         "title": "Coding task",
         "items": [
-          { "id": "mon_cod_1", "name": "Boxing app", "completed": false },
-          { "id": "mon_cod_2", "name": "Micro 1 preps", "completed": false }
+          {
+            "id": "mon_java_1",
+            "name": "Study Java concurrency: processes, threads, Runnable, Callable and ExecutorService",
+            "completed": false
+          },
+          {
+            "id": "mon_java_3",
+            "name": "Implement a small Java program using ExecutorService and multiple tasks",
+            "completed": false
+          },
+          {
+            "id": "mon_lc_1",
+            "name": "Solve 1 Medium problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "mon_lc_2",
+            "name": "If needed, study the solution and write down the pattern and my mistake",
+            "completed": false
+          }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "mon_job_1", "name": "Apply for entw jobs", "completed": false }
+          { "id": "mon_job_1", "name": "Apply for 💻 jobs", "completed": false }
         ]
       },
       {
-        "title": "Boxing bag",
+        "title": "Heavy training",
         "items": [
-          { "id": "mon_box_1", "name": "Boxing training", "completed": false }
-        ]
-      },
-      {
-        "title": "Jogging",
-        "items": [
-          { "id": "mon_jog_1", "name": "Jogging session", "completed": false }
+          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
         ]
       }
     ]
@@ -41,27 +53,44 @@
       {
         "title": "Acting courses",
         "items": [
-          { "id": "tue_act_2", "name": "Website create", "completed": false },
-          { "id": "tue_act_3", "name": "Acting training watch", "completed": false },
-          { "id": "tue_act_4", "name": "Make video stage-milk", "completed": false }
+          {
+            "id": "tue_act_1",
+            "name": "Read No Good to Come From Speaking several times without acting it",
+            "completed": false
+          },
+          {
+            "id": "tue_act_2",
+            "name": "Identify who Harriet is, who Pip is, and what Harriet wants from Pip",
+            "completed": false
+          },
+          {
+            "id": "tue_act_3",
+            "name": "Write the best-case and worst-case outcome for Harriet",
+            "completed": false
+          },
+          {
+            "id": "tue_act_4",
+            "name": "Attend acting course",
+            "completed": false
+          },
+          {
+            "id": "tue_act_5",
+            "name": "Write 3 things from today's acting class that I can apply to the monologue",
+            "completed": false
+          }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "tue_job_1", "name": "Apply for 9 jobs", "completed": false }
+          { "id": "tue_job_1", "name": "Apply for 🎬 jobs", "completed": false }
         ]
       },
       {
-        "title": "Heavy training",
+        "title": "Cardio",
         "items": [
-          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
-        ]
-      },
-      {
-        "title": "Boxing bag",
-        "items": [
-          { "id": "tue_box_1", "name": "Boxing session", "completed": false }
+          { "id": "mon_jog_1", "name": "Jogging session", "completed": false },
+          { "id": "mon_jog_1", "name": "Boxing session", "completed": false }
         ]
       }
     ]
@@ -78,26 +107,43 @@
       {
         "title": "Coding task",
         "items": [
-          { "id": "wed_cod_1", "name": "Leetcode 1 task", "completed": false },
-          { "id": "wed_cod_2", "name": "Leetcode 2 task", "completed": false }
+          {
+            "id": "wed_java_1",
+            "name": "Review Monday's ExecutorService implementation without copying it",
+            "completed": false
+          },
+          {
+            "id": "wed_java_2",
+            "name": "Create a shared counter accessed by multiple threads and reproduce a race condition",
+            "completed": false
+          },
+          {
+            "id": "wed_java_3",
+            "name": "Explain in writing why the race condition occurs",
+            "completed": false
+          },
+          {
+            "id": "wed_lc_1",
+            "name": "Solve 1 Medium problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "wed_lc_2",
+            "name": "Document the problem pattern, mistake and correct approach",
+            "completed": false
+          }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "wed_job_1", "name": "Apply for etnw jobs", "completed": false }
+          { "id": "wed_job_1", "name": "Apply for 💻 jobs", "completed": false }
         ]
       },
       {
-        "title": "Boxing bag",
+        "title": "Heavy training",
         "items": [
-          { "id": "wed_box_1", "name": "Boxing training", "completed": false }
-        ]
-      },
-      {
-        "title": "Jogging",
-        "items": [
-          { "id": "wed_jog_1", "name": "Jogging session", "completed": false }
+          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
         ]
       }
     ]
@@ -108,27 +154,44 @@
       {
         "title": "Acting courses",
         "items": [
-          { "id": "thu_act_1", "name": "Publish the video", "completed": false },
-          { "id": "thu_act_3", "name": "Acting training watch", "completed": false },
-          { "id": "thu_act_4", "name": "Find a way to apply for foreign movies", "completed": false }
+          {
+            "id": "thu_act_1",
+            "name": "Mark the monologue's changes of thought and important words",
+            "completed": false
+          },
+          {
+            "id": "thu_act_2",
+            "name": "Mark purposeful pauses without overacting",
+            "completed": false
+          },
+          {
+            "id": "thu_act_3",
+            "name": "Perform the complete monologue once without looking at the script",
+            "completed": false
+          },
+          {
+            "id": "thu_act_4",
+            "name": "Attend acting course",
+            "completed": false
+          },
+          {
+            "id": "thu_act_5",
+            "name": "Write down 3 weaknesses noticed during the performance",
+            "completed": false
+          }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "thu_job_1", "name": "Apply for 3 acting classes", "completed": false }
+          { "id": "thu_job_1", "name": "Apply for 🎬 acting classes", "completed": false }
         ]
       },
       {
-        "title": "Heavy training",
+        "title": "Cardio",
         "items": [
-          { "id": "thu_hvy_1", "name": "Heavy training session", "completed": false }
-        ]
-      },
-      {
-        "title": "Boxing bag",
-        "items": [
-          { "id": "thu_box_1", "name": "Boxing session", "completed": false }
+          { "id": "mon_jog_1", "name": "Jogging session", "completed": false },
+          { "id": "mon_jog_1", "name": "Boxing session", "completed": false }
         ]
       }
     ]
@@ -145,32 +208,85 @@
       {
         "title": "Coding task",
         "items": [
-          { "id": "fri_cod_1", "name": "Leetcode 2 tasks", "completed": false }
+          {
+            "id": "fri_java_1",
+            "name": "Fix the race condition using synchronized",
+            "completed": false
+          },
+          {
+            "id": "fri_java_2",
+            "name": "Experiment with volatile and determine why it does or does not solve the counter problem",
+            "completed": false
+          },
+          {
+            "id": "fri_java_3",
+            "name": "Explain the difference between synchronized, volatile and atomic operations",
+            "completed": false
+          },
+          {
+            "id": "fri_test_1",
+            "name": "Learn the difference between unit tests and integration tests",
+            "completed": false
+          },
+          {
+            "id": "fri_test_2",
+            "name": "Write 3 executable tests for a small Java class",
+            "completed": false
+          },
+          {
+            "id": "fri_lc_1",
+            "name": "Solve 1 Medium problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "fri_lc_2",
+            "name": "Analyze the solution and document the learned pattern",
+            "completed": false
+          }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "fri_job_1", "name": "Apply for etnw jobs", "completed": false }
+          { "id": "fri_job_1", "name": "Apply for 💻 jobs", "completed": false }
         ]
       },
       {
-        "title": "Boxing bag",
+        "title": "Heavy training",
         "items": [
-          { "id": "fri_box_1", "name": "Boxing training", "completed": false }
-        ]
-      },
-      {
-        "title": "Jogging",
-        "items": [
-          { "id": "fri_jog_1", "name": "Jogging session", "completed": false }
+          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
         ]
       }
     ]
   },
   {
     "day": "Saturday",
-    "tasks": []
+    "tasks": [
+      {
+        "title": "Training",
+        "items": [
+          { "id": "sat_hvy_1", "name": "Complete the leftovers it has to be 2 box, 2 run, 3 heavy", "completed": false }
+        ]
+      },
+      {
+        "title": "Acting",
+        "items": [
+          { "id": "sat_act_1", "name": "Complete the leftovers from acting", "completed": false }
+        ]
+      },
+      {
+        "title": "Coding task",
+        "items": [
+          { "id": "sat_code_1", "name": "Complete the leftovers from coding", "completed": false }
+        ]
+      },
+            {
+        "title": "Listen to lecture",
+        "items": [
+          { "id": "sat_lect_1", "name": "Complete the leftovers from lectures", "completed": false }
+        ]
+      }
+    ]
   },
   {
     "day": "Sunday",
