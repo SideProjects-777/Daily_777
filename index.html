@@ -16,7 +16,6 @@
     background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");}
   .container{max-width:960px;margin:0 auto;padding:40px 24px;}
 
-  /* Header */
   .header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--border);}
   .logo{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,9vw,76px);letter-spacing:.05em;line-height:.9;}
   .logo span{color:var(--accent);}
@@ -24,11 +23,8 @@
   .live-time{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,6vw,56px);color:var(--accent);letter-spacing:.05em;line-height:1;}
   .live-date{font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:4px;}
 
-  /* Day theme + stats row */
   .meta-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px;}
   .day-theme{font-size:11px;color:var(--accent3);letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(123,97,255,.2);background:rgba(123,97,255,.06);}
-
-  /* Stats bar */
   .stats-bar{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
   .stat-pill{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);padding:6px 14px;}
   .stat-pill-label{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);}
@@ -38,7 +34,6 @@
   .week-progress-wrap{height:3px;background:var(--border);margin-top:6px;margin-bottom:20px;overflow:hidden;}
   .week-progress-bar{height:100%;background:var(--accent);transition:width .6s ease;box-shadow:0 0 8px var(--accent);}
 
-  /* Now block */
   .now-block{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);padding:24px 28px;position:relative;overflow:hidden;margin-bottom:12px;animation:fadeUp .45s ease;}
   .now-block::after{content:'NOW';position:absolute;right:16px;top:14px;font-family:'Bebas Neue',sans-serif;font-size:46px;color:rgba(200,255,0,.05);letter-spacing:.1em;}
   .now-label{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:7px;}
@@ -49,9 +44,12 @@
   .progress-bar{height:100%;background:var(--accent);transition:width 1s linear;box-shadow:0 0 6px var(--accent);}
   .progress-label{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:4px;}
 
-  /* Todo list inside NOW */
   .now-todos{margin-top:18px;border-top:1px solid var(--border);padding-top:14px;}
   .now-todos-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+  .block-stat{font-size:10px;color:var(--muted);margin-bottom:8px;letter-spacing:.08em;}
+  .block-stat span{color:var(--accent);}
+
+  /* Shared todo item style */
   .todo-item{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.03);cursor:pointer;user-select:none;}
   .todo-item:last-child{border-bottom:none;}
   .todo-check{width:16px;height:16px;border:1px solid var(--muted);border-radius:3px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:all .15s;}
@@ -61,10 +59,7 @@
   .todo-item.done .todo-text{color:var(--muted);text-decoration:line-through;}
   .todo-link{color:var(--accent3);text-decoration:none;border-bottom:1px solid rgba(123,97,255,.3);}
   .todo-link:hover{color:var(--accent);}
-  .block-stat{font-size:10px;color:var(--muted);margin-bottom:8px;letter-spacing:.08em;}
-  .block-stat span{color:var(--accent);}
 
-  /* Divider & section */
   .divider{height:1px;background:var(--border);margin:26px 0;}
   .section-title{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
 
@@ -89,23 +84,26 @@
   .day-slot-name.sport{color:#ff9f43;}
   .day-slot-name.muted{color:var(--muted);}
 
-  /* Leftovers — full-width rows */
-  .leftover-row{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent3);padding:16px 20px;margin-bottom:8px;display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;}
-  .leftover-row.general{border-left-color:var(--accent);}
-  .leftover-meta{min-width:140px;flex-shrink:0;}
-  .leftover-day{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.06em;color:var(--muted);line-height:1;}
-  .leftover-row.general .leftover-day{color:var(--accent);}
-  .leftover-slot{font-size:9px;color:var(--accent3);letter-spacing:.14em;text-transform:uppercase;margin-top:3px;}
-  .leftover-row.general .leftover-slot{color:var(--accent);}
-  .leftover-items{flex:1;display:flex;flex-direction:column;gap:0;}
+  /* Full-width task rows (today + leftovers) */
+  .task-row{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent3);padding:16px 20px;margin-bottom:8px;display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;}
+  .task-row.today-row{border-left-color:var(--accent);}
+  .task-row.general-row{border-left-color:#ff9f43;}
+  .task-meta{min-width:140px;flex-shrink:0;}
+  .task-day{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.06em;color:var(--muted);line-height:1;}
+  .task-row.today-row .task-day{color:var(--accent);}
+  .task-row.general-row .task-day{color:#ff9f43;}
+  .task-slot{font-size:9px;color:var(--accent3);letter-spacing:.14em;text-transform:uppercase;margin-top:3px;}
+  .task-row.today-row .task-slot{color:var(--accent);}
+  .task-row.general-row .task-slot{color:#ff9f43;}
+  .task-items{flex:1;display:flex;flex-direction:column;}
 
   .footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--border);font-size:10px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:space-between;}
   @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
   @media(max-width:680px){
     .header{flex-direction:column;align-items:flex-start;gap:12px;}
     .clock-block{text-align:left;}
-    .leftover-row{flex-direction:column;gap:10px;}
-    .leftover-meta{min-width:unset;}
+    .task-row{flex-direction:column;gap:10px;}
+    .task-meta{min-width:unset;}
   }
 </style>
 </head>
@@ -138,18 +136,18 @@
       </div>
       <div class="stat-pill">
         <div>
-          <div class="stat-pill-label">Leftovers</div>
+          <div class="stat-pill-label">Remaining</div>
           <div class="stat-pill-value warn" id="stat-left-val">–</div>
-          <div class="stat-pill-sub">overdue tasks</div>
+          <div class="stat-pill-sub">incomplete</div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="week-progress-wrap">
     <div class="week-progress-bar" id="week-progress-bar" style="width:0%"></div>
   </div>
 
+  <!-- Right now -->
   <div class="now-block">
     <div class="now-label">▶ Right now</div>
     <span class="now-emoji" id="now-emoji">⏳</span>
@@ -168,13 +166,20 @@
     </div>
   </div>
 
+  <!-- Week grid -->
   <div class="divider"></div>
   <div class="section-title">This week</div>
   <div class="schedule-grid" id="schedule-grid"></div>
 
+  <!-- Today's tasks -->
   <div class="divider"></div>
-  <div class="section-title">⚠ Leftovers — incomplete tasks from past days</div>
-  <div id="leftovers-list"></div>
+  <div class="section-title">📋 Today's tasks</div>
+  <div id="today-list"></div>
+
+  <!-- All tasks (no time filter) -->
+  <div class="divider"></div>
+  <div class="section-title">📌 All tasks</div>
+  <div id="all-tasks-list"></div>
 
   <footer class="footer">
     <span>Auto-updates every second</span>
@@ -187,134 +192,114 @@ const DAYS       = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday',
 const DAYS_SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const DAY_ORDER  = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
 
-// ─── Schedule ─────────────────────────────────────────────────────────────────
+// ─── Schedule (work 07:30–16:30, gym after, then evening) ─────────────────────
 const WEEK = {
-  1:{theme:'Lecture · Work · Coding · Boxing · Jogging',slots:[
-    {s:[0,0],e:[7,0],label:'Sleep',emoji:'🌙',color:'muted'},
-    {s:[7,0],e:[7,30],label:'Morning routine',emoji:'☕',color:'muted'},
-    {s:[7,30],e:[8,30],label:'Listen to lecture',emoji:'🎧',color:'accent'},
-    {s:[8,30],e:[9,0],label:'Apply for jobs',emoji:'💻',color:'accent'},
-    {s:[9,0],e:[12,0],label:'Work',emoji:'💼',color:'work'},
-    {s:[12,0],e:[13,30],label:'Coding task',emoji:'🖥️',color:'accent'},
-    {s:[13,30],e:[16,30],label:'Work',emoji:'💼',color:'work'},
-    {s:[16,30],e:[18,0],label:'Boxing bag',emoji:'🥊',color:'sport'},
-    {s:[18,0],e:[19,0],label:'Jogging',emoji:'🏃',color:'sport'},
-    {s:[19,0],e:[21,0],label:'Wind down',emoji:'🌙',color:'muted'},
-    {s:[21,0],e:[24,0],label:'Sleep',emoji:'🌙',color:'muted'},
+  1:{theme:'Work · Boxing · Jogging · Lecture · Coding',slots:[
+    {s:[0,0],  e:[7,0],  label:'Sleep',               emoji:'🌙', color:'muted'},
+    {s:[7,0],  e:[7,30], label:'Morning routine',      emoji:'☕', color:'muted'},
+    {s:[7,30], e:[16,30],label:'Work',                 emoji:'💼', color:'work'},
+    {s:[16,30],e:[18,0], label:'Boxing bag',           emoji:'🥊', color:'sport'},
+    {s:[18,0], e:[19,0], label:'Jogging',              emoji:'🏃', color:'sport'},
+    {s:[19,0], e:[20,0], label:'Listen to lecture',    emoji:'🎧', color:'accent'},
+    {s:[20,0], e:[21,0], label:'Coding task',          emoji:'🖥️', color:'accent'},
+    {s:[21,0], e:[21,30],label:'Apply for jobs',       emoji:'💻', color:'accent'},
+    {s:[21,30],e:[24,0], label:'Sleep',                emoji:'🌙', color:'muted'},
   ]},
   2:{theme:'Work · Heavy Training · Boxing · Acting Courses',slots:[
-    {s:[0,0],e:[7,0],label:'Sleep',emoji:'🌙',color:'muted'},
-    {s:[7,0],e:[7,30],label:'Morning routine',emoji:'☕',color:'muted'},
-    {s:[7,30],e:[11,0],label:'Work',emoji:'💼',color:'work'},
-    {s:[11,0],e:[13,30],label:'Heavy training',emoji:'🏋️',color:'sport'},
-    {s:[13,30],e:[14,30],label:'Boxing bag',emoji:'🥊',color:'sport'},
-    {s:[14,30],e:[18,0],label:'Work',emoji:'💼',color:'work'},
-    {s:[18,0],e:[19,0],label:'Break',emoji:'☕',color:'muted'},
-    {s:[19,0],e:[21,0],label:'Acting courses',emoji:'🎬',color:'accent'},
-    {s:[21,0],e:[21,30],label:'Apply for jobs',emoji:'💻',color:'accent'},
-    {s:[21,30],e:[24,0],label:'Sleep',emoji:'🌙',color:'muted'},
+    {s:[0,0],  e:[7,0],  label:'Sleep',               emoji:'🌙', color:'muted'},
+    {s:[7,0],  e:[7,30], label:'Morning routine',      emoji:'☕', color:'muted'},
+    {s:[7,30], e:[16,30],label:'Work',                 emoji:'💼', color:'work'},
+    {s:[16,30],e:[18,0], label:'Heavy training',       emoji:'🏋️', color:'sport'},
+    {s:[18,0], e:[19,0], label:'Boxing bag',           emoji:'🥊', color:'sport'},
+    {s:[19,0], e:[21,0], label:'Acting courses',       emoji:'🎬', color:'accent'},
+    {s:[21,0], e:[21,30],label:'Apply for jobs',       emoji:'💻', color:'accent'},
+    {s:[21,30],e:[24,0], label:'Sleep',                emoji:'🌙', color:'muted'},
   ]},
-  3:{theme:'Lecture · Work · Coding · Boxing · Jogging',slots:[
-    {s:[0,0],e:[7,0],label:'Sleep',emoji:'🌙',color:'muted'},
-    {s:[7,0],e:[7,30],label:'Morning routine',emoji:'☕',color:'muted'},
-    {s:[7,30],e:[8,30],label:'Listen to lecture',emoji:'🎧',color:'accent'},
-    {s:[8,30],e:[9,0],label:'Apply for jobs',emoji:'💻',color:'accent'},
-    {s:[9,0],e:[12,0],label:'Work',emoji:'💼',color:'work'},
-    {s:[12,0],e:[13,30],label:'Coding task',emoji:'🖥️',color:'accent'},
-    {s:[13,30],e:[16,30],label:'Work',emoji:'💼',color:'work'},
-    {s:[16,30],e:[18,0],label:'Boxing bag',emoji:'🥊',color:'sport'},
-    {s:[18,0],e:[19,0],label:'Jogging',emoji:'🏃',color:'sport'},
-    {s:[19,0],e:[21,0],label:'Wind down',emoji:'🌙',color:'muted'},
-    {s:[21,0],e:[24,0],label:'Sleep',emoji:'🌙',color:'muted'},
+  3:{theme:'Work · Boxing · Jogging · Lecture · Coding',slots:[
+    {s:[0,0],  e:[7,0],  label:'Sleep',               emoji:'🌙', color:'muted'},
+    {s:[7,0],  e:[7,30], label:'Morning routine',      emoji:'☕', color:'muted'},
+    {s:[7,30], e:[16,30],label:'Work',                 emoji:'💼', color:'work'},
+    {s:[16,30],e:[18,0], label:'Boxing bag',           emoji:'🥊', color:'sport'},
+    {s:[18,0], e:[19,0], label:'Jogging',              emoji:'🏃', color:'sport'},
+    {s:[19,0], e:[20,0], label:'Listen to lecture',    emoji:'🎧', color:'accent'},
+    {s:[20,0], e:[21,0], label:'Coding task',          emoji:'🖥️', color:'accent'},
+    {s:[21,0], e:[21,30],label:'Apply for jobs',       emoji:'💻', color:'accent'},
+    {s:[21,30],e:[24,0], label:'Sleep',                emoji:'🌙', color:'muted'},
   ]},
   4:{theme:'Work · Heavy Training · Boxing · Acting Courses',slots:[
-    {s:[0,0],e:[7,0],label:'Sleep',emoji:'🌙',color:'muted'},
-    {s:[7,0],e:[7,30],label:'Morning routine',emoji:'☕',color:'muted'},
-    {s:[7,30],e:[11,0],label:'Work',emoji:'💼',color:'work'},
-    {s:[11,0],e:[13,30],label:'Heavy training',emoji:'🏋️',color:'sport'},
-    {s:[13,30],e:[14,30],label:'Boxing bag',emoji:'🥊',color:'sport'},
-    {s:[14,30],e:[18,0],label:'Work',emoji:'💼',color:'work'},
-    {s:[18,0],e:[19,0],label:'Break',emoji:'☕',color:'muted'},
-    {s:[19,0],e:[21,0],label:'Acting courses',emoji:'🎬',color:'accent'},
-    {s:[21,0],e:[21,30],label:'Apply for jobs',emoji:'💻',color:'accent'},
-    {s:[21,30],e:[24,0],label:'Sleep',emoji:'🌙',color:'muted'},
+    {s:[0,0],  e:[7,0],  label:'Sleep',               emoji:'🌙', color:'muted'},
+    {s:[7,0],  e:[7,30], label:'Morning routine',      emoji:'☕', color:'muted'},
+    {s:[7,30], e:[16,30],label:'Work',                 emoji:'💼', color:'work'},
+    {s:[16,30],e:[18,0], label:'Heavy training',       emoji:'🏋️', color:'sport'},
+    {s:[18,0], e:[19,0], label:'Boxing bag',           emoji:'🥊', color:'sport'},
+    {s:[19,0], e:[21,0], label:'Acting courses',       emoji:'🎬', color:'accent'},
+    {s:[21,0], e:[21,30],label:'Apply for jobs',       emoji:'💻', color:'accent'},
+    {s:[21,30],e:[24,0], label:'Sleep',                emoji:'🌙', color:'muted'},
   ]},
-  5:{theme:'Lecture · Work · Coding · Boxing · Jogging',slots:[
-    {s:[0,0],e:[7,0],label:'Sleep',emoji:'🌙',color:'muted'},
-    {s:[7,0],e:[7,30],label:'Morning routine',emoji:'☕',color:'muted'},
-    {s:[7,30],e:[8,30],label:'Listen to lecture',emoji:'🎧',color:'accent'},
-    {s:[8,30],e:[9,0],label:'Apply for jobs',emoji:'💻',color:'accent'},
-    {s:[9,0],e:[12,0],label:'Work',emoji:'💼',color:'work'},
-    {s:[12,0],e:[13,30],label:'Coding task',emoji:'🖥️',color:'accent'},
-    {s:[13,30],e:[16,30],label:'Work',emoji:'💼',color:'work'},
-    {s:[16,30],e:[18,0],label:'Boxing bag',emoji:'🥊',color:'sport'},
-    {s:[18,0],e:[19,0],label:'Jogging',emoji:'🏃',color:'sport'},
-    {s:[19,0],e:[21,0],label:'Wind down',emoji:'🌙',color:'muted'},
-    {s:[21,0],e:[24,0],label:'Sleep',emoji:'🌙',color:'muted'},
+  5:{theme:'Work · Boxing · Jogging · Lecture · Coding',slots:[
+    {s:[0,0],  e:[7,0],  label:'Sleep',               emoji:'🌙', color:'muted'},
+    {s:[7,0],  e:[7,30], label:'Morning routine',      emoji:'☕', color:'muted'},
+    {s:[7,30], e:[16,30],label:'Work',                 emoji:'💼', color:'work'},
+    {s:[16,30],e:[18,0], label:'Boxing bag',           emoji:'🥊', color:'sport'},
+    {s:[18,0], e:[19,0], label:'Jogging',              emoji:'🏃', color:'sport'},
+    {s:[19,0], e:[20,0], label:'Listen to lecture',    emoji:'🎧', color:'accent'},
+    {s:[20,0], e:[21,0], label:'Coding task',          emoji:'🖥️', color:'accent'},
+    {s:[21,0], e:[21,30],label:'Apply for jobs',       emoji:'💻', color:'accent'},
+    {s:[21,30],e:[24,0], label:'Sleep',                emoji:'🌙', color:'muted'},
   ]},
   6:{theme:'Heavy Training · Boxing · Acting Practice · Social',slots:[
-    {s:[0,0],e:[8,0],label:'Sleep',emoji:'🌙',color:'muted'},
-    {s:[8,0],e:[8,30],label:'Morning routine',emoji:'☕',color:'muted'},
-    {s:[9,0],e:[11,0],label:'Heavy training',emoji:'🏋️',color:'sport'},
-    {s:[11,0],e:[12,0],label:'Boxing bag',emoji:'🥊',color:'sport'},
-    {s:[12,0],e:[14,0],label:'Acting practice',emoji:'🎭',color:'accent'},
-    {s:[14,0],e:[15,0],label:'Listen to lecture',emoji:'🎧',color:'accent'},
-    {s:[15,0],e:[16,0],label:'Coding task',emoji:'🖥️',color:'accent'},
-    {s:[16,0],e:[17,0],label:'Break',emoji:'☕',color:'muted'},
-    {s:[17,0],e:[24,0],label:'Social life & rest',emoji:'🤝',color:'muted'},
+    {s:[0,0],  e:[8,0],  label:'Sleep',               emoji:'🌙', color:'muted'},
+    {s:[8,0],  e:[8,30], label:'Morning routine',      emoji:'☕', color:'muted'},
+    {s:[9,0],  e:[11,0], label:'Heavy training',       emoji:'🏋️', color:'sport'},
+    {s:[11,0], e:[12,0], label:'Boxing bag',           emoji:'🥊', color:'sport'},
+    {s:[12,0], e:[14,0], label:'Acting practice',      emoji:'🎭', color:'accent'},
+    {s:[14,0], e:[15,0], label:'Listen to lecture',    emoji:'🎧', color:'accent'},
+    {s:[15,0], e:[16,0], label:'Coding task',          emoji:'🖥️', color:'accent'},
+    {s:[16,0], e:[17,0], label:'Break',                emoji:'☕', color:'muted'},
+    {s:[17,0], e:[24,0], label:'Social life & rest',   emoji:'🤝', color:'muted'},
   ]},
   7:{theme:'Cycling · Household · Lecture · Weekly Review',slots:[
-    {s:[0,0],e:[8,0],label:'Sleep',emoji:'🌙',color:'muted'},
-    {s:[8,0],e:[8,30],label:'Morning routine',emoji:'☕',color:'muted'},
-    {s:[8,30],e:[11,0],label:'Cycling',emoji:'🚴',color:'sport'},
-    {s:[11,0],e:[12,0],label:'Rest & food',emoji:'🍳',color:'muted'},
-    {s:[12,0],e:[14,0],label:'Household issues',emoji:'🏠',color:''},
-    {s:[14,0],e:[15,0],label:'Listen to lecture',emoji:'🎧',color:'accent'},
-    {s:[15,0],e:[16,0],label:'Coding task',emoji:'🖥️',color:'accent'},
-    {s:[16,0],e:[17,0],label:'Break',emoji:'☕',color:'muted'},
-    {s:[17,0],e:[21,0],label:'Social life & rest',emoji:'🤝',color:'muted'},
-    {s:[21,0],e:[21,30],label:'Weekly Review',emoji:'📊',color:'accent'},
-    {s:[21,30],e:[22,0],label:'Week planning — max 3 priorities',emoji:'📋',color:'accent'},
-    {s:[22,0],e:[24,0],label:'Sleep',emoji:'🌙',color:'muted'},
+    {s:[0,0],  e:[8,0],  label:'Sleep',               emoji:'🌙', color:'muted'},
+    {s:[8,0],  e:[8,30], label:'Morning routine',      emoji:'☕', color:'muted'},
+    {s:[8,30], e:[11,0], label:'Cycling',              emoji:'🚴', color:'sport'},
+    {s:[11,0], e:[12,0], label:'Rest & food',          emoji:'🍳', color:'muted'},
+    {s:[12,0], e:[14,0], label:'Household issues',     emoji:'🏠', color:''},
+    {s:[14,0], e:[15,0], label:'Listen to lecture',    emoji:'🎧', color:'accent'},
+    {s:[15,0], e:[16,0], label:'Coding task',          emoji:'🖥️', color:'accent'},
+    {s:[16,0], e:[17,0], label:'Break',                emoji:'☕', color:'muted'},
+    {s:[17,0], e:[21,0], label:'Social life & rest',   emoji:'🤝', color:'muted'},
+    {s:[21,0], e:[21,30],label:'Weekly Review',        emoji:'📊', color:'accent'},
+    {s:[21,30],e:[22,0], label:'Week planning',        emoji:'📋', color:'accent'},
+    {s:[22,0], e:[24,0], label:'Sleep',                emoji:'🌙', color:'muted'},
   ]},
 };
 
 // ─── State ────────────────────────────────────────────────────────────────────
-const STORE_KEY = 'planner_todos_v2';
-let STATE = [];   // loaded from todos.json + merged with localStorage
+const STORE_KEY = 'planner_todos_v3';
+let STATE = [];
 
 async function initState() {
   let template = [];
   try {
     const res = await fetch('./todos.json');
     template = await res.json();
-  } catch(e) {
-    console.warn('Could not load todos.json, using empty state');
-    template = [];
-  }
+  } catch(e) { console.warn('Could not load todos.json'); }
 
-  // Load saved completion states
   let saved = {};
-  try {
-    const raw = localStorage.getItem(STORE_KEY);
-    if (raw) saved = JSON.parse(raw); // { id: boolean }
-  } catch(e) {}
+  try { const r = localStorage.getItem(STORE_KEY); if(r) saved = JSON.parse(r); } catch(e){}
 
-  // Deep clone template and apply saved completions
   STATE = JSON.parse(JSON.stringify(template));
   STATE.forEach(d => d.tasks.forEach(t =>
-    t.items && t.items.forEach(i => {
-      if (saved[i.id] !== undefined) i.completed = saved[i.id];
-    })
+    t.items && t.items.forEach(i => { if(saved[i.id]!==undefined) i.completed=saved[i.id]; })
   ));
 }
 
 function saveState() {
   const map = {};
   STATE.forEach(d => d.tasks.forEach(t =>
-    t.items && t.items.forEach(i => { map[i.id] = i.completed; })
+    t.items && t.items.forEach(i => { map[i.id]=i.completed; })
   ));
-  try { localStorage.setItem(STORE_KEY, JSON.stringify(map)); } catch(e) {}
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(map)); } catch(e){}
 }
 
 function toggleTodo(id) {
@@ -324,54 +309,31 @@ function toggleTodo(id) {
   saveState();
   renderNowTodos(currentSlotLabel, currentDayName);
   renderStats();
-  renderLeftovers();
+  renderTodayList();
+  renderAllTasks();
 }
 
 // ─── Calculations ─────────────────────────────────────────────────────────────
 function calcStats(dayName) {
-  // Today's tasks
-  const todayData = STATE.find(d => d.day === dayName);
+  const todayData = STATE.find(d=>d.day===dayName);
   let todayDone=0, todayTotal=0;
-  if (todayData) todayData.tasks.forEach(t =>
-    t.items && t.items.forEach(i => { todayTotal++; if(i.completed) todayDone++; })
-  );
+  if(todayData) todayData.tasks.forEach(t=>t.items&&t.items.forEach(i=>{todayTotal++;if(i.completed)todayDone++;}));
 
-  // Week total (Mon-Sun, excluding General)
   let weekDone=0, weekTotal=0;
-  STATE.forEach(d => {
+  STATE.forEach(d=>{
     if(d.day==='General') return;
-    d.tasks.forEach(t => t.items && t.items.forEach(i => {
-      weekTotal++; if(i.completed) weekDone++;
-    }));
+    d.tasks.forEach(t=>t.items&&t.items.forEach(i=>{weekTotal++;if(i.completed)weekDone++;}));
   });
 
-  // Leftovers count
-  const jsDay = new Date().getDay();
-  const todayIdx = jsDay===0 ? 6 : jsDay-1;
-  let leftCount=0;
-  STATE.forEach(d => {
-    if(d.day==='General'){
-      d.tasks.forEach(t => t.items && t.items.forEach(i => { if(!i.completed) leftCount++; }));
-      return;
-    }
-    const di = DAY_ORDER.indexOf(d.day);
-    if(di===-1||di>=todayIdx) return;
-    d.tasks.forEach(t => t.items && t.items.forEach(i => { if(!i.completed) leftCount++; }));
-  });
+  // remaining = all incomplete across everything
+  let remaining=0;
+  STATE.forEach(d=>d.tasks.forEach(t=>t.items&&t.items.forEach(i=>{if(!i.completed)remaining++;})));
 
-  return {todayDone,todayTotal,weekDone,weekTotal,leftCount};
-}
-
-function calcBlockStats(dayName, slotLabel) {
-  const task = matchTasks(dayName, slotLabel);
-  if(!task||!task.items) return null;
-  const done  = task.items.filter(i=>i.completed).length;
-  const total = task.items.length;
-  return {done,total,pct:total?Math.round(done/total*100):0};
+  return {todayDone,todayTotal,weekDone,weekTotal,remaining};
 }
 
 function calcDayStats(dayName) {
-  const d = STATE.find(x=>x.day===dayName);
+  const d=STATE.find(x=>x.day===dayName);
   if(!d||!d.tasks.length) return null;
   let done=0,total=0;
   d.tasks.forEach(t=>t.items&&t.items.forEach(i=>{total++;if(i.completed)done++;}));
@@ -391,9 +353,9 @@ function getCurSlot(dk,nowM){
 }
 
 function matchTasks(dayName, slotLabel) {
-  const dayData = STATE.find(d=>d.day===dayName);
+  const dayData=STATE.find(d=>d.day===dayName);
   if(!dayData||!dayData.tasks.length) return null;
-  const lbl = slotLabel.toLowerCase().replace(/\s+/g,'');
+  const lbl=slotLabel.toLowerCase().replace(/\s+/g,'');
   return dayData.tasks.find(t=>{
     const tl=t.title.toLowerCase().replace(/\s+/g,'');
     return lbl.includes(tl)||tl.includes(lbl);
@@ -410,78 +372,87 @@ function todoItemHTML(item) {
   </div>`;
 }
 
+function taskRowHTML(dayLabel, slotTitle, items, extraClass='') {
+  const ds = items.filter(i=>i.completed).length;
+  const pct = items.length ? Math.round(ds/items.length*100) : 0;
+  return `<div class="task-row ${extraClass}">
+    <div class="task-meta">
+      <div class="task-day">${dayLabel}</div>
+      <div class="task-slot">${slotTitle}</div>
+      <div style="font-size:9px;color:var(--muted);margin-top:6px;letter-spacing:.06em">${ds}/${items.length} · ${pct}%</div>
+    </div>
+    <div class="task-items">${items.map(todoItemHTML).join('')}</div>
+  </div>`;
+}
+
 // ─── Renderers ────────────────────────────────────────────────────────────────
 let currentSlotLabel='', currentDayName='';
 
 function renderStats() {
-  const s = calcStats(currentDayName);
-  const todayPct = s.todayTotal ? Math.round(s.todayDone/s.todayTotal*100) : 0;
-  const weekPct  = s.weekTotal  ? Math.round(s.weekDone /s.weekTotal *100) : 0;
-
-  document.getElementById('stat-today-val').textContent = `${todayPct}%`;
-  document.getElementById('stat-today-sub').textContent = `${s.todayDone}/${s.todayTotal} tasks`;
-  document.getElementById('stat-week-val').textContent  = `${weekPct}%`;
-  document.getElementById('stat-week-sub').textContent  = `${s.weekDone}/${s.weekTotal} done`;
-  document.getElementById('stat-left-val').textContent  = s.leftCount;
-  document.getElementById('week-progress-bar').style.width = weekPct+'%';
+  const s=calcStats(currentDayName);
+  const todayPct=s.todayTotal?Math.round(s.todayDone/s.todayTotal*100):0;
+  const weekPct=s.weekTotal?Math.round(s.weekDone/s.weekTotal*100):0;
+  document.getElementById('stat-today-val').textContent=`${todayPct}%`;
+  document.getElementById('stat-today-sub').textContent=`${s.todayDone}/${s.todayTotal} tasks`;
+  document.getElementById('stat-week-val').textContent=`${weekPct}%`;
+  document.getElementById('stat-week-sub').textContent=`${s.weekDone}/${s.weekTotal} done`;
+  document.getElementById('stat-left-val').textContent=s.remaining;
+  document.getElementById('week-progress-bar').style.width=weekPct+'%';
 }
 
 function renderNowTodos(slotLabel, dayName) {
-  const wrap = document.getElementById('now-todos');
-  const list = document.getElementById('now-todos-list');
-  const bstat = document.getElementById('block-stat');
-  const task = matchTasks(dayName, slotLabel);
-  if(!task||!task.items||!task.items.length){ wrap.style.display='none'; return; }
-
-  const bs = calcBlockStats(dayName, slotLabel);
+  const wrap=document.getElementById('now-todos');
+  const list=document.getElementById('now-todos-list');
+  const bstat=document.getElementById('block-stat');
+  const task=matchTasks(dayName,slotLabel);
+  if(!task||!task.items||!task.items.length){wrap.style.display='none';return;}
+  const done=task.items.filter(i=>i.completed).length;
+  const pct=task.items.length?Math.round(done/task.items.length*100):0;
   wrap.style.display='block';
-  bstat.innerHTML = bs ? `<span>${bs.done}</span>/${bs.total} completed &nbsp;·&nbsp; <span>${bs.pct}%</span>` : '';
-  list.innerHTML  = task.items.map(todoItemHTML).join('');
+  bstat.innerHTML=`<span>${done}</span>/${task.items.length} completed &nbsp;·&nbsp; <span>${pct}%</span>`;
+  list.innerHTML=task.items.map(todoItemHTML).join('');
 }
 
-function renderLeftovers() {
-  const jsDay  = new Date().getDay();
-  const todayIdx = jsDay===0 ? 6 : jsDay-1;
-  const container = document.getElementById('leftovers-list');
-  let html = '';
+function renderTodayList() {
+  const dayName=DAYS[new Date().getDay()];
+  const container=document.getElementById('today-list');
+  const todayData=STATE.find(d=>d.day===dayName);
+  let html='';
+  if(todayData&&todayData.tasks.length) {
+    todayData.tasks.forEach(task=>{
+      if(!task.items||!task.items.length) return;
+      html+=taskRowHTML(dayName, task.title, task.items, 'today-row');
+    });
+  }
+  container.innerHTML=html||'<p style="color:var(--muted);font-size:12px;letter-spacing:.08em;padding:8px 0">No tasks defined for today.</p>';
+}
 
-  // General always first
-  STATE.forEach(d => {
+function renderAllTasks() {
+  const dayName=DAYS[new Date().getDay()];
+  const container=document.getElementById('all-tasks-list');
+  let html='';
+
+  // General first (highlighted)
+  STATE.forEach(d=>{
     if(d.day!=='General') return;
-    d.tasks.forEach(task => {
-      if(!task.items) return;
-      const incomplete = task.items.filter(i=>!i.completed);
-      if(!incomplete.length) return;
-      html += `<div class="leftover-row general">
-        <div class="leftover-meta">
-          <div class="leftover-day">General</div>
-          <div class="leftover-slot">${task.title}</div>
-        </div>
-        <div class="leftover-items">${incomplete.map(todoItemHTML).join('')}</div>
-      </div>`;
+    d.tasks.forEach(task=>{
+      if(!task.items||!task.items.length) return;
+      html+=taskRowHTML('General', task.title, task.items, 'general-row');
     });
   });
 
-  // Past days
-  STATE.forEach(d => {
-    if(d.day==='General') return;
-    const di = DAY_ORDER.indexOf(d.day);
-    if(di===-1||di>=todayIdx) return;
-    d.tasks.forEach(task => {
-      if(!task.items) return;
-      const incomplete = task.items.filter(i=>!i.completed);
-      if(!incomplete.length) return;
-      html += `<div class="leftover-row">
-        <div class="leftover-meta">
-          <div class="leftover-day">${d.day}</div>
-          <div class="leftover-slot">${task.title}</div>
-        </div>
-        <div class="leftover-items">${incomplete.map(todoItemHTML).join('')}</div>
-      </div>`;
+  // All other days except today and General — no time filter
+  DAY_ORDER.forEach(name=>{
+    if(name===dayName) return; // today already shown above
+    const d=STATE.find(x=>x.day===name);
+    if(!d||d.day==='General') return;
+    d.tasks.forEach(task=>{
+      if(!task.items||!task.items.length) return;
+      html+=taskRowHTML(name, task.title, task.items);
     });
   });
 
-  container.innerHTML = html || '<p style="color:var(--muted);font-size:12px;letter-spacing:.08em;padding:12px 0">✓ All caught up — no leftovers.</p>';
+  container.innerHTML=html||'<p style="color:var(--muted);font-size:12px;letter-spacing:.08em;padding:8px 0">No tasks.</p>';
 }
 
 function renderGrid(todayJsD){
@@ -497,10 +468,10 @@ function renderGrid(todayJsD){
       const l=sl.label.toLowerCase();
       return!l.includes('sleep')&&!l.includes('wind down')&&!l.includes('wake up');
     });
-    const statsHtml = ds
-      ? `<div class="day-completion"><span>${ds.done}/${ds.total}</span> tasks · <span>${ds.pct}%</span></div>
-         <div class="mini-progress"><div class="mini-progress-bar" style="width:${ds.pct}%"></div></div>`
-      : '';
+    const statsHtml=ds
+      ?`<div class="day-completion"><span>${ds.done}/${ds.total}</span> tasks · <span>${ds.pct}%</span></div>
+        <div class="mini-progress"><div class="mini-progress-bar" style="width:${ds.pct}%"></div></div>`
+      :'';
     card.innerHTML=`
       <div class="day-name">${DAYS_SHORT[jsD]}${isToday?' ◀':''}</div>
       <div class="day-theme-small">${day.theme}</div>
@@ -514,7 +485,7 @@ function renderGrid(todayJsD){
   });
 }
 
-// ─── Clock loop ───────────────────────────────────────────────────────────────
+// ─── Loop ─────────────────────────────────────────────────────────────────────
 let gridDone=false;
 
 function update(){
@@ -543,17 +514,14 @@ function update(){
     currentSlotLabel=cur.label; currentDayName=dayName;
     renderNowTodos(cur.label,dayName);
     renderStats();
-    renderLeftovers();
+    renderTodayList();
+    renderAllTasks();
   }
 
   if(!gridDone){renderGrid(jsD);gridDone=true;}
 }
 
-// ─── Boot ─────────────────────────────────────────────────────────────────────
-initState().then(()=>{
-  update();
-  setInterval(update,1000);
-});
+initState().then(()=>{ update(); setInterval(update,1000); });
 </script>
 </body>
 </html>
