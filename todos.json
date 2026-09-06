@@ -14,35 +14,35 @@
           {
             "id": "mon_java_1",
             "name": "Study Java concurrency: processes, threads, Runnable, Callable and ExecutorService",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_java_3",
             "name": "Implement a small Java program using ExecutorService and multiple tasks",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_lc_1",
             "name": "Solve 1 Medium problem independently for 25 minutes",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_lc_2",
             "name": "If needed, study the solution and write down the pattern and my mistake",
-            "completed": false
+            "completed": true
           }
         ]
       },
       {
         "title": "Apply for jobs",
         "items": [
-          { "id": "mon_job_1", "name": "Apply for 💻 jobs", "completed": false }
+          { "id": "mon_job_1", "name": "Apply for 💻 jobs", "completed": true }
         ]
       },
       {
         "title": "Heavy training",
         "items": [
-          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
+          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": true }
         ]
       }
     ]
@@ -56,22 +56,22 @@
           {
             "id": "tue_act_1",
             "name": "Read No Good to Come From Speaking several times without acting it",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue_act_2",
             "name": "Identify who Harriet is, who Pip is, and what Harriet wants from Pip",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue_act_3",
             "name": "Write the best-case and worst-case outcome for Harriet",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue_act_4",
             "name": "Attend acting course",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue_act_5",
@@ -89,8 +89,8 @@
       {
         "title": "Cardio",
         "items": [
-          { "id": "mon_jog_1", "name": "Jogging session", "completed": false },
-          { "id": "mon_jog_1", "name": "Boxing session", "completed": false }
+          { "id": "mon_jog_1", "name": "Jogging session", "completed": true },
+          { "id": "mon_box_1", "name": "Boxing session", "completed": true }
         ]
       }
     ]
@@ -110,27 +110,27 @@
           {
             "id": "wed_java_1",
             "name": "Review Monday's ExecutorService implementation without copying it",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed_java_2",
             "name": "Create a shared counter accessed by multiple threads and reproduce a race condition",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed_java_3",
             "name": "Explain in writing why the race condition occurs",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed_lc_1",
             "name": "Solve 1 Medium problem independently for 25 minutes",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed_lc_2",
             "name": "Document the problem pattern, mistake and correct approach",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -143,7 +143,7 @@
       {
         "title": "Heavy training",
         "items": [
-          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": false }
+          { "id": "tue_hvy_1", "name": "Heavy training session", "completed": true }
         ]
       }
     ]
@@ -157,7 +157,7 @@
           {
             "id": "thu_act_1",
             "name": "Mark the monologue's changes of thought and important words",
-            "completed": false
+            "completed": true
           },
           {
             "id": "thu_act_2",
@@ -167,7 +167,7 @@
           {
             "id": "thu_act_3",
             "name": "Perform the complete monologue once without looking at the script",
-            "completed": false
+            "completed": true
           },
           {
             "id": "thu_act_4",
@@ -190,8 +190,8 @@
       {
         "title": "Cardio",
         "items": [
-          { "id": "mon_jog_1", "name": "Jogging session", "completed": false },
-          { "id": "mon_jog_1", "name": "Boxing session", "completed": false }
+          { "id": "mon_jog_1", "name": "Jogging session", "completed": true },
+          { "id": "mon_box_1", "name": "Boxing session", "completed": true }
         ]
       }
     ]
@@ -226,22 +226,22 @@
           {
             "id": "fri_test_1",
             "name": "Learn the difference between unit tests and integration tests",
-            "completed": false
+            "completed": true
           },
           {
             "id": "fri_test_2",
             "name": "Write 3 executable tests for a small Java class",
-            "completed": false
+            "completed": true
           },
           {
             "id": "fri_lc_1",
             "name": "Solve 1 Medium problem independently for 25 minutes",
-            "completed": false
+            "completed": true
           },
           {
             "id": "fri_lc_2",
             "name": "Analyze the solution and document the learned pattern",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -265,25 +265,25 @@
       {
         "title": "Training",
         "items": [
-          { "id": "sat_hvy_1", "name": "Complete the leftovers it has to be 2 box, 2 run, 3 heavy", "completed": false }
+          { "id": "sat_hvy_1", "name": "Complete the leftovers it has to be 2 box, 2 run, 3 heavy", "completed": true }
         ]
       },
       {
         "title": "Acting",
         "items": [
-          { "id": "sat_act_1", "name": "Complete the leftovers from acting", "completed": false }
+          { "id": "sat_act_1", "name": "Complete the leftovers from acting", "completed": true }
         ]
       },
       {
         "title": "Coding task",
         "items": [
-          { "id": "sat_code_1", "name": "Complete the leftovers from coding", "completed": false }
+          { "id": "sat_code_1", "name": "Complete the leftovers from coding", "completed": true }
         ]
       },
             {
         "title": "Listen to lecture",
         "items": [
-          { "id": "sat_lect_1", "name": "Complete the leftovers from lectures", "completed": false }
+          { "id": "sat_lect_1", "name": "Complete the leftovers from lectures", "completed": true }
         ]
       }
     ]
@@ -298,10 +298,10 @@
       {
         "title": "General",
         "items": [
-          { "id": "gen_1", "name": "Tickets to Azerbaijan", "completed": false },
+          { "id": "gen_1", "name": "Tickets to Azerbaijan", "completed": true },
           { "id": "gen_2", "name": "Apartment adjustments - prepare", "completed": false },
-          { "id": "gen_3", "name": "Diary", "completed": false },
-          { "id": "gen_5", "name": "Schedule doctor appointment", "completed": false }
+          { "id": "gen_3", "name": "Diary", "completed": true },
+          { "id": "gen_5", "name": "Schedule doctor appointment", "completed": true }
         ]
       }
     ]
