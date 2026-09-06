@@ -1,1 +1,505 @@
-
+[
+  {
+    "day": "Monday",
+    "tasks": [
+      {
+        "title": "Listen to lecture",
+        "items": [
+          {
+            "id": "mon_lec_1",
+            "name": "System Design — continue the current Udemy lecture",
+            "url": "https://dedalus.udemy.com/course/mastering-system-design-from-basics-to-cracking-interviews/",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding task",
+        "items": [
+          {
+            "id": "mon_java_1",
+            "name": "Study synchronized in Java: intrinsic locks, synchronized methods and synchronized blocks",
+            "completed": false
+          },
+          {
+            "id": "mon_java_2",
+            "name": "Modify last week's race-condition counter to make it thread-safe using synchronized",
+            "completed": false
+          },
+          {
+            "id": "mon_java_3",
+            "name": "Explain why synchronized fixes the race condition",
+            "completed": false
+          },
+          {
+            "id": "mon_lc_1",
+            "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "mon_lc_2",
+            "name": "Analyze the solution and document the pattern and mistake",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App maintenance",
+        "items": [
+          {
+            "id": "mon_app_1",
+            "name": "Java1z0-808 — review the current published version and identify one useful improvement",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "mon_job_1",
+            "name": "Apply for suitable 💻 software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "mon_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "tasks": [
+      {
+        "title": "Acting courses",
+        "items": [
+          {
+            "id": "tue_act_1",
+            "name": "Attend acting class",
+            "completed": false
+          },
+          {
+            "id": "tue_act_2",
+            "name": "Ask the acting teacher for one specific technique for memorizing lines",
+            "completed": false
+          },
+          {
+            "id": "tue_act_3",
+            "name": "Write down 3 useful things learned during today's class",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Line learning",
+        "items": [
+          {
+            "id": "tue_lines_1",
+            "name": "Choose one monologue as the primary memorization target",
+            "completed": false
+          },
+          {
+            "id": "tue_lines_2",
+            "name": "Break the monologue into 5-8 thought/action beats",
+            "completed": false
+          },
+          {
+            "id": "tue_lines_3",
+            "name": "Memorize the first 20-25% of the monologue",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "tue_job_1",
+            "name": "Apply for suitable 🎬 acting jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Cardio",
+        "items": [
+          {
+            "id": "tue_cardio_1",
+            "name": "Complete jogging session",
+            "completed": false
+          },
+          {
+            "id": "tue_cardio_2",
+            "name": "Complete boxing session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "tasks": [
+      {
+        "title": "Listen to lecture",
+        "items": [
+          {
+            "id": "wed_lec_1",
+            "name": "AWS Cloud Architecture — continue the current Udemy lecture",
+            "url": "https://dedalus.udemy.com/course/aws-java/learn/lecture/44883389#overview",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding task",
+        "items": [
+          {
+            "id": "wed_java_1",
+            "name": "Study volatile and understand visibility versus atomicity",
+            "completed": false
+          },
+          {
+            "id": "wed_java_2",
+            "name": "Modify the shared-counter example using volatile and demonstrate why volatile alone does not make ++ atomic",
+            "completed": false
+          },
+          {
+            "id": "wed_java_3",
+            "name": "Replace the counter with AtomicInteger and implement the increment using incrementAndGet",
+            "completed": false
+          },
+          {
+            "id": "wed_java_4",
+            "name": "Explain the difference between synchronized, volatile and AtomicInteger in your own words",
+            "completed": false
+          },
+          {
+            "id": "wed_lc_1",
+            "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "wed_lc_2",
+            "name": "Document the problem pattern and mistake",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App maintenance",
+        "items": [
+          {
+            "id": "wed_app_1",
+            "name": "DiscoverDE — review the current published version and identify one useful improvement",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "wed_job_1",
+            "name": "Apply for suitable 💻 software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "wed_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "tasks": [
+      {
+        "title": "Acting — Line Memorization",
+        "items": [
+          {
+            "id": "thu_lines_1",
+            "name": "Review the thought/action beats from Tuesday without looking at the script",
+            "completed": false
+          },
+          {
+            "id": "thu_lines_2",
+            "name": "Continue memorizing the next 20-25% of the monologue",
+            "completed": false
+          },
+          {
+            "id": "thu_lines_3",
+            "name": "Perform the memorized section without looking at the script",
+            "completed": false
+          },
+          {
+            "id": "thu_lines_4",
+            "name": "Identify the lines that I consistently forget and practice them separately",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting — Performance",
+        "items": [
+          {
+            "id": "thu_act_1",
+            "name": "Perform the complete monologue once with the script available only as backup",
+            "completed": false
+          },
+          {
+            "id": "thu_act_2",
+            "name": "Write down 3 specific acting weaknesses to work on next",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "thu_job_1",
+            "name": "Apply for suitable 🎬 acting jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Cardio",
+        "items": [
+          {
+            "id": "thu_cardio_1",
+            "name": "Complete jogging session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "tasks": [
+      {
+        "title": "Listen to lecture",
+        "items": [
+          {
+            "id": "fri_lec_1",
+            "name": "Certified Kubernetes Administrator — continue the current Udemy lecture",
+            "url": "https://dedalus.udemy.com/course/certified-kubernetes-administrator",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding task",
+        "items": [
+          {
+            "id": "fri_java_1",
+            "name": "Build a small Java concurrency example using AtomicInteger",
+            "completed": false
+          },
+          {
+            "id": "fri_java_2",
+            "name": "Create a small comparison between synchronized and AtomicInteger under concurrent load",
+            "completed": false
+          },
+          {
+            "id": "fri_java_3",
+            "name": "Write 3 tests that verify the expected concurrent result",
+            "completed": false
+          },
+          {
+            "id": "fri_java_4",
+            "name": "Explain when you would choose synchronized versus an atomic class",
+            "completed": false
+          },
+          {
+            "id": "fri_lc_1",
+            "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "fri_lc_2",
+            "name": "Analyze the solution and document the learned pattern",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App maintenance",
+        "items": [
+          {
+            "id": "fri_app_1",
+            "name": "Bulls&Cows — inspect the project and identify the Expo upgrade path and current bugs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "fri_job_1",
+            "name": "Apply for suitable 💻 software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "fri_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "tasks": [
+      {
+        "title": "Catch-up",
+        "items": [
+          {
+            "id": "sat_catch_1",
+            "name": "Complete the most important unfinished task from Monday-Friday, if any",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Training",
+        "items": [
+          {
+            "id": "sat_training_1",
+            "name": "Use Saturday to complete any missing weekly training target",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "tasks": [
+      {
+        "title": "Weekly Assessment",
+        "items": [
+          {
+            "id": "sun_review_1",
+            "name": "Java concurrency — PASS if I can explain and demonstrate synchronized, volatile and AtomicInteger",
+            "completed": false
+          },
+          {
+            "id": "sun_review_2",
+            "name": "Acting — PASS if I memorized at least 40-50% of the selected monologue",
+            "completed": false
+          },
+          {
+            "id": "sun_review_3",
+            "name": "LeetCode — PASS if 3 Medium problems were attempted",
+            "completed": false
+          },
+          {
+            "id": "sun_review_4",
+            "name": "Training — PASS if weekly target reaches 2 boxing, 2 running and 3 heavy sessions",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Optional Coding Issues",
+        "items": [
+          {
+            "id": "sun_issue_code_1",
+            "name": "Java1z0-808 — implement the improvement identified Monday",
+            "completed": false
+          },
+          {
+            "id": "sun_issue_code_2",
+            "name": "DiscoverDE — implement the improvement identified Wednesday",
+            "completed": false
+          },
+          {
+            "id": "sun_issue_code_3",
+            "name": "Bulls&Cows — upgrade Expo and fix one identified bug",
+            "completed": false
+          },
+          {
+            "id": "sun_issue_code_4",
+            "name": "BoxingCoach — create one small working feature or improve the current architecture",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Optional Acting Issues",
+        "items": [
+          {
+            "id": "sun_issue_act_1",
+            "name": "Memorize the next 10-15% of the selected monologue",
+            "completed": false
+          },
+          {
+            "id": "sun_issue_act_2",
+            "name": "Perform the memorized section three times without looking at the script",
+            "completed": false
+          },
+          {
+            "id": "sun_issue_act_3",
+            "name": "Record one self-tape and identify one specific improvement for next week",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "General",
+    "tasks": [
+      {
+        "title": "Personal",
+        "items": [
+          {
+            "id": "gen_1",
+            "name": "Bonn - doctor",
+            "completed": false
+          },
+          {
+            "id": "gen_2",
+            "name": "Apartment adjustments - prepare",
+            "completed": false
+          },
+          {
+            "id": "gen_3",
+            "name": "Meet Umar",
+            "completed": false
+          },
+          {
+            "id": "gen_4",
+            "name": "Schedule doctor appointment",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  }
+]
