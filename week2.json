@@ -19,27 +19,27 @@
           {
             "id": "mon_java_1",
             "name": "Study synchronized in Java: intrinsic locks, synchronized methods and synchronized blocks",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_java_2",
             "name": "Modify last week's race-condition counter to make it thread-safe using synchronized",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_java_3",
             "name": "Explain why synchronized fixes the race condition",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_lc_1",
             "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_lc_2",
             "name": "Analyze the solution and document the pattern and mistake",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -49,7 +49,7 @@
           {
             "id": "mon_app_1",
             "name": "Java1z0-808 — review the current published version and identify one useful improvement",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -69,7 +69,7 @@
           {
             "id": "mon_gym_1",
             "name": "Complete heavy training session",
-            "completed": false
+            "completed": true
           }
         ]
       }
@@ -185,12 +185,12 @@
           {
             "id": "wed_lc_1",
             "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed_lc_2",
             "name": "Document the problem pattern and mistake",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -200,7 +200,7 @@
           {
             "id": "wed_app_1",
             "name": "DiscoverDE — review the current published version and identify one useful improvement",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -282,10 +282,15 @@
       {
         "title": "Cardio",
         "items": [
-          {
+		 {
             "id": "thu_cardio_1",
             "name": "Complete jogging session",
             "completed": false
+          },
+          {
+            "id": "thu_cardio_2",
+            "name": "Complete boxing session",
+            "completed": true
           }
         ]
       }
@@ -331,12 +336,12 @@
           {
             "id": "fri_lc_1",
             "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
-            "completed": false
+            "completed": true
           },
           {
             "id": "fri_lc_2",
             "name": "Analyze the solution and document the learned pattern",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -366,7 +371,7 @@
           {
             "id": "fri_gym_1",
             "name": "Complete heavy training session",
-            "completed": false
+            "completed": true
           }
         ]
       }
@@ -381,7 +386,7 @@
           {
             "id": "sat_catch_1",
             "name": "Complete the most important unfinished task from Monday-Friday, if any",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -481,7 +486,7 @@
           {
             "id": "gen_1",
             "name": "Bonn - doctor",
-            "completed": false
+            "completed": true
           },
           {
             "id": "gen_2",
@@ -496,7 +501,7 @@
           {
             "id": "gen_4",
             "name": "Schedule doctor appointment",
-            "completed": false
+            "completed": true
           }
         ]
       }
