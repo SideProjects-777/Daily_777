@@ -1,0 +1,502 @@
+[
+  {
+    "day": "Monday",
+    "tasks": [
+      {
+        "title": "Coding — Java Concurrency",
+        "items": [
+          {
+            "id": "mon_java_1",
+            "name": "Study volatile in Java: visibility, happens-before and why volatile does not guarantee atomicity",
+            "completed": false
+          },
+          {
+            "id": "mon_java_2",
+            "name": "Modify the shared-counter example using volatile and demonstrate why volatile ++ is not atomic",
+            "completed": false
+          },
+          {
+            "id": "mon_java_3",
+            "name": "Replace the volatile counter with AtomicInteger and implement incrementAndGet",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — Bulls&Cows",
+        "items": [
+          {
+            "id": "mon_bulls_1",
+            "name": "Open the Bulls&Cows project and document the current Expo SDK, React Native version and package manager state",
+            "completed": false
+          },
+          {
+            "id": "mon_bulls_2",
+            "name": "Identify the target Expo SDK and list the main breaking changes or migration issues that must be addressed",
+            "completed": false
+          },
+          {
+            "id": "mon_bulls_3",
+            "name": "Create a safe upgrade branch and successfully start the first Expo upgrade step",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "mon_job_1",
+            "name": "Apply for suitable 💻 software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "mon_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "tasks": [
+      {
+        "title": "Acting — Class",
+        "items": [
+          {
+            "id": "tue_act_1",
+            "name": "Attend acting class",
+            "completed": false
+          },
+          {
+            "id": "tue_act_2",
+            "name": "Ask the teacher for one specific technique to improve emotional access or emotional transitions",
+            "completed": false
+          },
+          {
+            "id": "tue_act_3",
+            "name": "Write down 3 concrete things learned during the class",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting — Next Video Preparation",
+        "items": [
+          {
+            "id": "tue_video_1",
+            "name": "Choose the monologue for the next video after the current Pip video",
+            "completed": false
+          },
+          {
+            "id": "tue_video_2",
+            "name": "Read the monologue several times and identify the character's objective, stakes and emotional turning points",
+            "completed": false
+          },
+          {
+            "id": "tue_video_3",
+            "name": "Divide the monologue into clear thought/action beats",
+            "completed": false
+          },
+          {
+            "id": "tue_video_4",
+            "name": "Choose one specific emotion or emotional transition to work on during the week",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "tue_job_1",
+            "name": "Apply for suitable 🎬 acting jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Cardio",
+        "items": [
+          {
+            "id": "tue_cardio_1",
+            "name": "Complete jogging session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "tasks": [
+      {
+        "title": "Coding — Java Concurrency",
+        "items": [
+          {
+            "id": "wed_java_1",
+            "name": "Explain the difference between synchronized, volatile and AtomicInteger in your own words",
+            "completed": false
+          },
+          {
+            "id": "wed_java_2",
+            "name": "Create a small concurrent comparison between synchronized and AtomicInteger",
+            "completed": false
+          },
+          {
+            "id": "wed_java_3",
+            "name": "Write 3 tests that verify the expected concurrent result",
+            "completed": false
+          },
+          {
+            "id": "wed_java_4",
+            "name": "Explain when AtomicInteger is appropriate and when synchronized is the better choice",
+            "completed": false
+          },
+          {
+            "id": "wed_lc_1",
+            "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "wed_lc_2",
+            "name": "Analyze the solution and document the pattern or mistake",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — DiscoverDE",
+        "items": [
+          {
+            "id": "wed_discover_1",
+            "name": "Reproduce and investigate the first known DiscoverDE bug",
+            "completed": false
+          },
+          {
+            "id": "wed_discover_2",
+            "name": "Fix the first bug and verify the fix",
+            "completed": false
+          },
+          {
+            "id": "wed_discover_3",
+            "name": "Identify the remaining known bugs and order them by severity",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — Smart Apply",
+        "items": [
+          {
+            "id": "wed_smart_1",
+            "name": "Define the smallest useful Smart Apply workflow that saves time during job applications",
+            "completed": false
+          },
+          {
+            "id": "wed_smart_2",
+            "name": "Choose one concrete feature and implement its basic working version",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "wed_job_1",
+            "name": "Apply for suitable 💻 software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Cardio",
+        "items": [
+          {
+            "id": "wed_cardio_1",
+            "name": "Complete boxing session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "tasks": [
+      {
+        "title": "Acting — Publish Video",
+        "items": [
+          {
+            "id": "thu_publish_1",
+            "name": "Record the final Pip self-tape",
+            "completed": false
+          },
+          {
+            "id": "thu_publish_2",
+            "name": "Review the recording and select the strongest take",
+            "completed": false
+          },
+          {
+            "id": "thu_publish_3",
+            "name": "Complete basic editing and prepare the video for YouTube",
+            "completed": false
+          },
+          {
+            "id": "thu_publish_4",
+            "name": "Publish the new acting video on YouTube",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting — Emotional Work",
+        "items": [
+          {
+            "id": "thu_emotion_1",
+            "name": "Perform the selected emotional transition from the next monologue three times with different emotional intensities",
+            "completed": false
+          },
+          {
+            "id": "thu_emotion_2",
+            "name": "Record one short exercise and identify one specific performance difference between the takes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "thu_job_1",
+            "name": "Apply for suitable 🎬 acting jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Cardio",
+        "items": [
+          {
+            "id": "thu_cardio_1",
+            "name": "Complete jogging session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "tasks": [
+      {
+        "title": "Coding — Bulls&Cows",
+        "items": [
+          {
+            "id": "fri_bulls_1",
+            "name": "Continue the Expo upgrade from the exact point reached Monday",
+            "completed": false
+          },
+          {
+            "id": "fri_bulls_2",
+            "name": "Resolve the first migration/build error caused by the Expo upgrade",
+            "completed": false
+          },
+          {
+            "id": "fri_bulls_3",
+            "name": "Start the application successfully on the upgraded Expo version",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — DiscoverDE",
+        "items": [
+          {
+            "id": "fri_discover_1",
+            "name": "Fix the remaining highest-priority DiscoverDE bugs",
+            "completed": false
+          },
+          {
+            "id": "fri_discover_2",
+            "name": "Test the affected functionality end-to-end",
+            "completed": false
+          },
+          {
+            "id": "fri_discover_3",
+            "name": "Finish the current bug-fixing scope so DiscoverDE is ready for normal use",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "LeetCode",
+        "items": [
+          {
+            "id": "fri_lc_1",
+            "name": "Solve 1 Medium LeetCode problem independently for 25 minutes",
+            "completed": false
+          },
+          {
+            "id": "fri_lc_2",
+            "name": "Analyze the solution and document the learned pattern",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "fri_job_1",
+            "name": "Apply for suitable 💻 software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "fri_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "tasks": [
+      {
+        "title": "Catch-up",
+        "items": [
+          {
+            "id": "sat_catch_1",
+            "name": "Complete the single highest-priority unfinished mandatory task from Monday-Friday",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Training Catch-up",
+        "items": [
+          {
+            "id": "sat_training_1",
+            "name": "Complete only the missing training target needed to reach 2 boxing, 2 running and 3 heavy sessions for the week",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "tasks": [
+      {
+        "title": "Weekly Assessment",
+        "items": [
+          {
+            "id": "sun_review_1",
+            "name": "Java — PASS if I can explain and demonstrate synchronized, volatile and AtomicInteger without notes",
+            "completed": false
+          },
+          {
+            "id": "sun_review_2",
+            "name": "Acting — PASS if the new video is published and the next monologue has been selected and analyzed",
+            "completed": false
+          },
+          {
+            "id": "sun_review_3",
+            "name": "DiscoverDE — PASS if the planned bug-fixing scope is finished",
+            "completed": false
+          },
+          {
+            "id": "sun_review_4",
+            "name": "Bulls&Cows — PASS if the Expo upgrade has successfully started and the project runs on the upgraded version",
+            "completed": false
+          },
+          {
+            "id": "sun_review_5",
+            "name": "Training — PASS if weekly target reaches 2 boxing, 2 running and 3 heavy sessions",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Optional Coding Backlog",
+        "items": [
+          {
+            "id": "sun_optional_1",
+            "name": "Bulls&Cows — continue the Expo migration and fix the next migration blocker",
+            "completed": false
+          },
+          {
+            "id": "sun_optional_2",
+            "name": "Smart Apply — implement the next small feature that directly reduces manual job-application work",
+            "completed": false
+          },
+          {
+            "id": "sun_optional_3",
+            "name": "Travel Wizard — identify the three largest changes required before v1.0.0",
+            "completed": false
+          },
+          {
+            "id": "sun_optional_4",
+            "name": "BoxingCoach — implement one small meaningful feature or improve one architectural component",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Optional Acting Backlog",
+        "items": [
+          {
+            "id": "sun_act_1",
+            "name": "Continue memorizing the next monologue beyond the initial analysis",
+            "completed": false
+          },
+          {
+            "id": "sun_act_2",
+            "name": "Perform the next monologue once focusing only on the chosen emotional transition",
+            "completed": false
+          },
+          {
+            "id": "sun_act_3",
+            "name": "Record a short self-tape of the next monologue and identify one concrete improvement for the next recording",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "General",
+    "tasks": [
+      {
+        "title": "Personal",
+        "items": [
+          {
+            "id": "gen_1",
+            "name": "Apartment adjustments - prepare",
+            "completed": false
+          },
+          {
+            "id": "gen_2",
+            "name": "Prepare todo's for Azerbaijan",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  }
+]
