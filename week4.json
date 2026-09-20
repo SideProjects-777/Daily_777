@@ -1,0 +1,507 @@
+[
+  {
+    "day": "Monday",
+    "tasks": [
+      {
+        "title": "Coding — Java Concurrency",
+        "items": [
+          {
+            "id": "mon_java_1",
+            "name": "Study ReentrantLock: locking, unlocking, tryLock and why it differs from synchronized",
+            "completed": false
+          },
+          {
+            "id": "mon_java_2",
+            "name": "Implement a shared-counter example using ReentrantLock",
+            "completed": false
+          },
+          {
+            "id": "mon_java_3",
+            "name": "Create a small example where tryLock is useful and explain the advantage of avoiding an indefinite wait",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — Bulls&Cows",
+        "items": [
+          {
+            "id": "mon_bulls_1",
+            "name": "Review the current production Play Store listing and identify every UI screenshot/image that is outdated",
+            "completed": false
+          },
+          {
+            "id": "mon_bulls_2",
+            "name": "Prepare the latest app UI/screenshots required for the Play Store page",
+            "completed": false
+          },
+          {
+            "id": "mon_bulls_3",
+            "name": "Document exactly what still needs to be changed in the Play Store listing before the update can be submitted",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "mon_job_1",
+            "name": "Apply for suitable software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "mon_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "tasks": [
+      {
+        "title": "Acting — Line Memorization",
+        "items": [
+          {
+            "id": "tue_act_1",
+            "name": "Learn and test one concrete line-memorization technique instead of repeatedly rereading the script",
+            "completed": false
+          },
+          {
+            "id": "tue_act_2",
+            "name": "Break the next monologue into thought/action beats and memorize it beat by beat",
+            "completed": false
+          },
+          {
+            "id": "tue_act_3",
+            "name": "Perform the memorized section without looking at the script and mark every line that still fails",
+            "completed": false
+          },
+          {
+            "id": "tue_act_4",
+            "name": "Repeat the failed sections using active recall until they can be delivered without prompts",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting — Emotional Work",
+        "items": [
+          {
+            "id": "tue_emotion_1",
+            "name": "Identify the main emotional transition in the next monologue and define what changes for the character at that moment",
+            "completed": false
+          },
+          {
+            "id": "tue_emotion_2",
+            "name": "Perform the transition three times with different emotional intensity while keeping the objective unchanged",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Cardio",
+        "items": [
+          {
+            "id": "tue_boxing_1",
+            "name": "Complete boxing session",
+            "completed": false
+          },
+          {
+            "id": "tue_jogging_1",
+            "name": "Complete jogging session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "tasks": [
+      {
+        "title": "Coding — JVM / Memory",
+        "items": [
+          {
+            "id": "wed_jvm_1",
+            "name": "Study Java heap vs stack, object allocation and what happens when objects become unreachable",
+            "completed": false
+          },
+          {
+            "id": "wed_jvm_2",
+            "name": "Explain garbage collection in your own words and distinguish reachable from unreachable objects",
+            "completed": false
+          },
+          {
+            "id": "wed_jvm_3",
+            "name": "Study the purpose of GC generations and understand why short-lived objects are handled differently from long-lived objects",
+            "completed": false
+          },
+          {
+            "id": "wed_jvm_4",
+            "name": "Write a small Java example that creates many objects and explain what memory/GC behavior you would expect",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — Smart Apply",
+        "items": [
+          {
+            "id": "wed_smart_1",
+            "name": "Define the smallest useful Smart Apply workflow that directly saves time during your own job applications",
+            "completed": false
+          },
+          {
+            "id": "wed_smart_2",
+            "name": "Choose one concrete feature from that workflow and define its input, output and success condition",
+            "completed": false
+          },
+          {
+            "id": "wed_smart_3",
+            "name": "Implement the first working version of the chosen feature",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — Boxing App",
+        "items": [
+          {
+            "id": "wed_boxing_1",
+            "name": "Review the current Boxing App implementation and identify the most useful next feature",
+            "completed": false
+          },
+          {
+            "id": "wed_boxing_2",
+            "name": "Implement one small meaningful feature or complete one clearly defined unfinished part",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "wed_job_1",
+            "name": "Apply for suitable software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "wed_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "tasks": [
+      {
+        "title": "Acting — Memorization + Performance",
+        "items": [
+          {
+            "id": "thu_act_1",
+            "name": "Continue memorizing the next monologue using active recall rather than passive rereading",
+            "completed": false
+          },
+          {
+            "id": "thu_act_2",
+            "name": "Run the monologue from memory while deliberately attaching each line to its character objective or action",
+            "completed": false
+          },
+          {
+            "id": "thu_act_3",
+            "name": "Record one short performance section without looking at the script",
+            "completed": false
+          },
+          {
+            "id": "thu_act_4",
+            "name": "Review the recording and identify one specific emotional or performance weakness to work on next",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting — Portfolio Video #2",
+        "items": [
+          {
+            "id": "thu_video_1",
+            "name": "Decide what section of the next monologue will eventually be used for portfolio video #2",
+            "completed": false
+          },
+          {
+            "id": "thu_video_2",
+            "name": "Define the performance intention, emotional starting point and turning point for the selected section",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Cardio",
+        "items": [
+          {
+            "id": "thu_boxing_1",
+            "name": "Complete boxing session",
+            "completed": false
+          },
+          {
+            "id": "thu_jogging_1",
+            "name": "Complete jogging session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "tasks": [
+      {
+        "title": "Algorithms — Sorting",
+        "items": [
+          {
+            "id": "fri_algo_1",
+            "name": "Study Merge Sort and be able to explain its time complexity, space complexity and divide-and-conquer structure",
+            "completed": false
+          },
+          {
+            "id": "fri_algo_2",
+            "name": "Understand when to rely on the language/library sort instead of implementing a sorting algorithm yourself",
+            "completed": false
+          },
+          {
+            "id": "fri_algo_3",
+            "name": "Study sorting stability vs instability and in-place vs out-of-place sorting",
+            "completed": false
+          },
+          {
+            "id": "fri_algo_4",
+            "name": "Study Heap Sort conceptually and explain when using a heap can be preferable to fully sorting a collection",
+            "completed": false
+          },
+          {
+            "id": "fri_algo_5",
+            "name": "Study binary-search patterns: first occurrence, last occurrence, lower bound and upper bound",
+            "completed": false
+          },
+          {
+            "id": "fri_algo_6",
+            "name": "Understand external sorting and why it is needed when the data does not fit into memory",
+            "completed": false
+          },
+          {
+            "id": "fri_algo_7",
+            "name": "Explain at a high level how modern library sorting implementations work and why knowing the underlying algorithm still matters",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Lecture — Java / Backend",
+        "items": [
+          {
+            "id": "fri_lecture_1",
+            "name": "Complete one focused Udemy lecture block and write down 3 concrete points that can be applied to current Java/backend work",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — Bulls&Cows",
+        "items": [
+          {
+            "id": "fri_bulls_1",
+            "name": "Investigate how the current ads integration is configured and identify why ads are not currently connected",
+            "completed": false
+          },
+          {
+            "id": "fri_bulls_2",
+            "name": "Implement or configure the first required step to reconnect ads",
+            "completed": false
+          },
+          {
+            "id": "fri_bulls_3",
+            "name": "Verify that the app builds successfully with the ads configuration and document any remaining blocker",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "App — Smart Apply",
+        "items": [
+          {
+            "id": "fri_smart_1",
+            "name": "Continue the Smart Apply feature started Wednesday and reach a usable end-to-end result",
+            "completed": false
+          },
+          {
+            "id": "fri_smart_2",
+            "name": "Test the workflow using one real job application scenario and record what still needs improvement",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "fri_job_1",
+            "name": "Apply for suitable software engineering jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Heavy training",
+        "items": [
+          {
+            "id": "fri_gym_1",
+            "name": "Complete heavy training session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "tasks": [
+      {
+        "title": "Catch-up",
+        "items": [
+          {
+            "id": "sat_catch_1",
+            "name": "Complete only the single highest-priority unfinished mandatory task from Monday-Friday",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Training Catch-up",
+        "items": [
+          {
+            "id": "sat_training_1",
+            "name": "Complete only the missing training target needed to reach 3 heavy, 2 boxing and 2 jogging sessions for the week",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "tasks": [
+      {
+        "title": "Weekly Assessment",
+        "items": [
+          {
+            "id": "sun_review_1",
+            "name": "Java — PASS if I can explain and demonstrate ReentrantLock and the basic JVM heap/GC concepts without notes",
+            "completed": false
+          },
+          {
+            "id": "sun_review_2",
+            "name": "Algorithms — PASS if I can explain Merge Sort, binary-search bounds, sorting stability/in-place behavior and when a heap is preferable to full sorting",
+            "completed": false
+          },
+          {
+            "id": "sun_review_3",
+            "name": "Bulls&Cows — PASS if the Play Store update work has a clear completed state and the ads integration has either been restored or has a precisely identified blocker",
+            "completed": false
+          },
+          {
+            "id": "sun_review_4",
+            "name": "Smart Apply — PASS if one useful workflow works end-to-end on a realistic job application scenario",
+            "completed": false
+          },
+          {
+            "id": "sun_review_5",
+            "name": "Boxing App — PASS if one meaningful feature or unfinished component has been completed",
+            "completed": false
+          },
+          {
+            "id": "sun_review_6",
+            "name": "Acting — PASS if I have materially improved line memorization and completed deliberate emotional work on the next monologue",
+            "completed": false
+          },
+          {
+            "id": "sun_review_7",
+            "name": "Training — PASS if weekly target reaches 3 heavy, 2 boxing and 2 jogging sessions",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Optional Coding Backlog",
+        "items": [
+          {
+            "id": "sun_optional_1",
+            "name": "Smart Apply — continue the next feature only if all mandatory work is finished",
+            "completed": false
+          },
+          {
+            "id": "sun_optional_2",
+            "name": "Bulls&Cows — continue Play Store or ads work only if a weekday blocker remains",
+            "completed": false
+          },
+          {
+            "id": "sun_optional_3",
+            "name": "Travel Wizard — review the three largest changes required before v1.0.0",
+            "completed": false
+          },
+          {
+            "id": "sun_optional_4",
+            "name": "Boxing App — continue one small improvement if all mandatory work is finished",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "General",
+    "tasks": [
+      {
+        "title": "Personal",
+        "items": [
+          {
+            "id": "gen_1",
+            "name": "Apartment adjustments - prepare",
+            "completed": false
+          },
+          {
+            "id": "gen_2",
+            "name": "Send the required requests/messages to the tattoo master",
+            "completed": false
+          },
+          {
+            "id": "gen_3",
+            "name": "Find interesting shows or activities in Baku to do with mom",
+            "completed": false
+          },
+          {
+            "id": "gen_4",
+            "name": "Find a suitable coworking spot in Baku and contact them about availability/details",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  }
+]
