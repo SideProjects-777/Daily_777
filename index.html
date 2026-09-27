@@ -273,9 +273,9 @@ let STATE = [];
 async function initState() {
   let template = [];
   try {
-    const res = await fetch('./week4.json');
+    const res = await fetch('./week5.json');
     template = await res.json();
-  } catch(e) { console.warn('Could not load week4.json'); }
+  } catch(e) { console.warn('Could not load week5.json'); }
 
   let saved = {};
   try { const r = localStorage.getItem(STORE_KEY); if(r) saved = JSON.parse(r); } catch(e){}
