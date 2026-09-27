@@ -8,17 +8,17 @@
           {
             "id": "mon_java_1",
             "name": "Study ReentrantLock: locking, unlocking, tryLock and why it differs from synchronized",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_java_2",
             "name": "Implement a shared-counter example using ReentrantLock",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_java_3",
             "name": "Create a small example where tryLock is useful and explain the advantage of avoiding an indefinite wait",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -28,17 +28,17 @@
           {
             "id": "mon_bulls_1",
             "name": "Review the current production Play Store listing and identify every UI screenshot/image that is outdated",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_bulls_2",
             "name": "Prepare the latest app UI/screenshots required for the Play Store page",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon_bulls_3",
             "name": "Document exactly what still needs to be changed in the Play Store listing before the update can be submitted",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -48,7 +48,7 @@
           {
             "id": "mon_job_1",
             "name": "Apply for suitable software engineering jobs",
-            "completed": false
+            "completed": true
           }
         ]
       },
