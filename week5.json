@@ -1,0 +1,537 @@
+[
+  {
+    "day": "Monday",
+    "tasks": [
+      {
+        "title": "Smart Apply — Stage 0",
+        "items": [
+          {
+            "id": "mon-smartapply-1",
+            "name": "Define the complete Smart Apply workflow from job discovery to application tracking",
+            "completed": false
+          },
+          {
+            "id": "mon-smartapply-2",
+            "name": "Define MVP scope: inputs, processing steps, outputs and what will explicitly stay out of MVP",
+            "completed": false
+          },
+          {
+            "id": "mon-smartapply-3",
+            "name": "Choose initial technical architecture and project structure",
+            "completed": false
+          },
+          {
+            "id": "mon-smartapply-4",
+            "name": "Create the project and implement the first MVP foundation",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Java Coding",
+        "items": [
+          {
+            "id": "mon-java-1",
+            "name": "Implement a small concurrency exercise using ReentrantLock",
+            "completed": false
+          },
+          {
+            "id": "mon-java-2",
+            "name": "Review the implementation and identify where synchronization is actually required",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "LeetCode",
+        "items": [
+          {
+            "id": "mon-leetcode-1",
+            "name": "Solve 1 focused medium-level problem",
+            "completed": false
+          },
+          {
+            "id": "mon-leetcode-2",
+            "name": "Write down the approach and complexity after solving",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Light Training",
+        "items": [
+          {
+            "id": "mon-training-1",
+            "name": "Light full-body movement / mobility session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "tasks": [
+      {
+        "title": "Hotel Scraper — Architecture & Setup",
+        "items": [
+          {
+            "id": "tue-hotel-1",
+            "name": "Define the exact MVP: hotel source, information to scrape, comparison criteria and output",
+            "completed": false
+          },
+          {
+            "id": "tue-hotel-2",
+            "name": "Define the scraper/data pipeline architecture",
+            "completed": false
+          },
+          {
+            "id": "tue-hotel-3",
+            "name": "Set up the project and implement the first scraper/data-fetching component",
+            "completed": false
+          },
+          {
+            "id": "tue-hotel-4",
+            "name": "Define the data model for hotels and comparison results",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Udemy Lecture",
+        "items": [
+          {
+            "id": "tue-lecture-1",
+            "name": "Complete this week's planned System Design / AWS / CKA lecture block",
+            "completed": false
+          },
+          {
+            "id": "tue-lecture-2",
+            "name": "Write down 3–5 useful technical takeaways",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Startup Issues",
+        "items": [
+          {
+            "id": "tue-startup-1",
+            "name": "Go through the current startup ideas/issues list",
+            "completed": false
+          },
+          {
+            "id": "tue-startup-2",
+            "name": "Select the most promising unresolved problems for deeper validation",
+            "completed": false
+          },
+          {
+            "id": "tue-startup-3",
+            "name": "Define what evidence is needed before investing development time",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting — Showreel Research",
+        "items": [
+          {
+            "id": "tue-acting-1",
+            "name": "Find 3–5 relevant actor showreel examples",
+            "completed": false
+          },
+          {
+            "id": "tue-acting-2",
+            "name": "Compare their structure, duration, opening, scene selection and pacing",
+            "completed": false
+          },
+          {
+            "id": "tue-acting-3",
+            "name": "Write down the structure that would fit your current portfolio",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Light Training",
+        "items": [
+          {
+            "id": "tue-training-1",
+            "name": "Light boxing session",
+            "completed": false
+          },
+          {
+            "id": "tue-training-2",
+            "name": "Light jogging / easy cardio",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "tasks": [
+      {
+        "title": "Hotel Scraper — MVP",
+        "items": [
+          {
+            "id": "wed-hotel-1",
+            "name": "Continue implementing hotel scraping/data extraction",
+            "completed": false
+          },
+          {
+            "id": "wed-hotel-2",
+            "name": "Normalize scraped hotel information into the defined data model",
+            "completed": false
+          },
+          {
+            "id": "wed-hotel-3",
+            "name": "Implement the first hotel comparison logic based on selected criteria",
+            "completed": false
+          },
+          {
+            "id": "wed-hotel-4",
+            "name": "Prepare the application for deployment",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Travel Wizard",
+        "items": [
+          {
+            "id": "wed-travel-1",
+            "name": "Review the current Travel Wizard implementation and identify incomplete/outdated parts",
+            "completed": false
+          },
+          {
+            "id": "wed-travel-2",
+            "name": "Create a prioritized update list",
+            "completed": false
+          },
+          {
+            "id": "wed-travel-3",
+            "name": "Implement the highest-priority update",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Java Coding",
+        "items": [
+          {
+            "id": "wed-java-1",
+            "name": "Implement a concurrent collection based exercise",
+            "completed": false
+          },
+          {
+            "id": "wed-java-2",
+            "name": "Compare the implementation with a synchronized approach",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "LeetCode",
+        "items": [
+          {
+            "id": "wed-leetcode-1",
+            "name": "Solve 1 focused LeetCode problem",
+            "completed": false
+          },
+          {
+            "id": "wed-leetcode-2",
+            "name": "Review the solution and identify a cleaner or more efficient approach",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Light Training",
+        "items": [
+          {
+            "id": "wed-training-1",
+            "name": "Light full-body movement / mobility session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "tasks": [
+      {
+        "title": "Travel Wizard — Development",
+        "items": [
+          {
+            "id": "thu-travel-1",
+            "name": "Implement the next highest-priority Travel Wizard update",
+            "completed": false
+          },
+          {
+            "id": "thu-travel-2",
+            "name": "Refactor or clean up outdated implementation where necessary",
+            "completed": false
+          },
+          {
+            "id": "thu-travel-3",
+            "name": "Test the updated flow end-to-end",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Medical Project — Discovery",
+        "items": [
+          {
+            "id": "thu-medical-1",
+            "name": "Identify 3 concrete healthcare problems that could be addressed by software",
+            "completed": false
+          },
+          {
+            "id": "thu-medical-2",
+            "name": "Evaluate each problem by user pain, frequency, technical feasibility and MVP scope",
+            "completed": false
+          },
+          {
+            "id": "thu-medical-3",
+            "name": "Select one problem and define a concrete MVP",
+            "completed": false
+          },
+          {
+            "id": "thu-medical-4",
+            "name": "Create the initial technical/product backlog",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Startup Issues",
+        "items": [
+          {
+            "id": "thu-startup-1",
+            "name": "Continue validation of the selected startup problems",
+            "completed": false
+          },
+          {
+            "id": "thu-startup-2",
+            "name": "Challenge the assumptions behind the most promising idea",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting — Showreel Planning",
+        "items": [
+          {
+            "id": "thu-acting-1",
+            "name": "Map your existing and planned videos into possible showreel categories",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-2",
+            "name": "Create a rough showreel sequence using the footage you expect to have",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-3",
+            "name": "Identify the biggest current gap in the showreel",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Light Training",
+        "items": [
+          {
+            "id": "thu-training-1",
+            "name": "Light boxing session",
+            "completed": false
+          },
+          {
+            "id": "thu-training-2",
+            "name": "Light jogging / easy cardio",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "tasks": [
+      {
+        "title": "Smart Apply — Initial Implementation",
+        "items": [
+          {
+            "id": "fri-smartapply-1",
+            "name": "Continue the Stage 0 implementation",
+            "completed": false
+          },
+          {
+            "id": "fri-smartapply-2",
+            "name": "Implement the first complete end-to-end slice of the MVP",
+            "completed": false
+          },
+          {
+            "id": "fri-smartapply-3",
+            "name": "Document what is working and define the next implementation stage",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Hotel Scraper — Deployment",
+        "items": [
+          {
+            "id": "fri-hotel-1",
+            "name": "Deploy the Hotel Scraper MVP to Render",
+            "completed": false
+          },
+          {
+            "id": "fri-hotel-2",
+            "name": "Verify the deployed application and fix deployment/runtime issues",
+            "completed": false
+          },
+          {
+            "id": "fri-hotel-3",
+            "name": "Document the current MVP capabilities and limitations",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Java Coding",
+        "items": [
+          {
+            "id": "fri-java-1",
+            "name": "Implement a small JVM/memory-related Java exercise",
+            "completed": false
+          },
+          {
+            "id": "fri-java-2",
+            "name": "Explain the memory behavior of the implementation in your own notes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "LeetCode",
+        "items": [
+          {
+            "id": "fri-leetcode-1",
+            "name": "Solve 1 LeetCode problem",
+            "completed": false
+          },
+          {
+            "id": "fri-leetcode-2",
+            "name": "Review complexity and alternative solution",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Light Training",
+        "items": [
+          {
+            "id": "fri-training-1",
+            "name": "Light full-body movement / mobility session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "tasks": [
+      {
+        "title": "Coding Catch-up",
+        "items": [
+          {
+            "id": "sat-coding-1",
+            "name": "Complete the highest-priority unfinished task from Smart Apply, Hotel Scraper or Travel Wizard",
+            "completed": false
+          },
+          {
+            "id": "sat-coding-2",
+            "name": "Only if the main projects are on track: continue the Medical Project MVP",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "LeetCode",
+        "items": [
+          {
+            "id": "sat-leetcode-1",
+            "name": "Optional catch-up: solve one additional problem if fewer than 3 focused problems were completed during the week",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Light Training",
+        "items": [
+          {
+            "id": "sat-training-1",
+            "name": "Light cardio or walking",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "tasks": [
+      {
+        "title": "Weekly Assessment",
+        "items": [
+          {
+            "id": "sun-review-1",
+            "name": "Review progress on Smart Apply, Hotel Scraper and Travel Wizard",
+            "completed": false
+          },
+          {
+            "id": "sun-review-2",
+            "name": "Record what was actually completed versus planned",
+            "completed": false
+          },
+          {
+            "id": "sun-review-3",
+            "name": "Identify the single most important unfinished coding task to carry forward",
+            "completed": false
+          },
+          {
+            "id": "sun-review-4",
+            "name": "Assess Java and LeetCode progress",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Optional Coding Backlog",
+        "items": [
+          {
+            "id": "sun-backlog-1",
+            "name": "Continue the highest-value unfinished project task only if the week's core work is complete",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Light Training",
+        "items": [
+          {
+            "id": "sun-training-1",
+            "name": "Easy walk, mobility or recovery session",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  }
+]
