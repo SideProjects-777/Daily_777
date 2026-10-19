@@ -58,6 +58,16 @@
         ]
       },
       {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "mon_job_1",
+            "name": "Apply for suitable software engineering jobs",
+            "completed": true
+          }
+        ]
+      },
+      {
         "title": "Light Training",
         "items": [
           {
@@ -194,6 +204,16 @@
             "id": "wed-hotel-4",
             "name": "Prepare the application for deployment",
             "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "wed_job_1",
+            "name": "Apply for suitable software engineering jobs",
+            "completed": true
           }
         ]
       },
@@ -379,6 +399,16 @@
             "id": "fri-smartapply-3",
             "name": "Document what is working and define the next implementation stage",
             "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for jobs",
+        "items": [
+          {
+            "id": "fri_job_1",
+            "name": "Apply for suitable software engineering jobs",
+            "completed": true
           }
         ]
       },
