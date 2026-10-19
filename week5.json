@@ -63,7 +63,7 @@
           {
             "id": "mon_job_1",
             "name": "Apply for suitable software engineering jobs",
-            "completed": true
+            "completed": false
           }
         ]
       },
@@ -213,7 +213,7 @@
           {
             "id": "wed_job_1",
             "name": "Apply for suitable software engineering jobs",
-            "completed": true
+            "completed": false
           }
         ]
       },
@@ -408,7 +408,7 @@
           {
             "id": "fri_job_1",
             "name": "Apply for suitable software engineering jobs",
-            "completed": true
+            "completed": false
           }
         ]
       },
