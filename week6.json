@@ -1,0 +1,607 @@
+[
+  {
+    "day": "Monday",
+    "tasks": [
+      {
+        "title": "Apply for Jobs",
+        "items": [
+          {
+            "id": "mon-job-1",
+            "name": "Record current compensation (check GPT)",
+            "completed": false
+          },
+          {
+            "id": "mon-job-2",
+            "name": "Determine the minimum salary required to change jobs",
+            "completed": false
+          },
+          {
+            "id": "mon-job-3",
+            "name": "Set target salary and long-term goal (€6,000–10,000 net)",
+            "completed": false
+          },
+          {
+            "id": "mon-job-4",
+            "name": "Define requirements regarding remote work, countries, tech stack, vacation and working conditions",
+            "completed": false
+          },
+          {
+            "id": "mon-job-5",
+            "name": "Apply for jobs in LinkedIn",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Lectures",
+        "items": [
+          {
+            "id": "mon-lecture-1",
+            "name": "Understand invariance: why List<Integer> cannot be assigned to List<Number>",
+            "completed": false
+          },
+          {
+            "id": "mon-lecture-2",
+            "name": "Study ? extends Number and ? super Integer",
+            "completed": false
+          },
+          {
+            "id": "mon-lecture-3",
+            "name": "Understand PECS principle",
+            "completed": false
+          },
+          {
+            "id": "mon-lecture-4",
+            "name": "Write examples for extends, super and copying between lists",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "mon-code-1",
+            "name": "LeetCode",
+            "completed": false
+          },
+          {
+            "id": "mon-code-2",
+            "name": "Java1Z0-808 - DEX Code optimization",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "mon-sport-1",
+            "name": "Heavy training",
+            "completed": false
+          },
+          {
+            "id": "mon-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "mon-family-1",
+            "name": "Specify minimum salary and taxation model",
+            "completed": false
+          },
+          {
+            "id": "mon-family-2",
+            "name": "Determine preferred work schedule and workload",
+            "completed": false
+          },
+          {
+            "id": "mon-family-3",
+            "name": "List dissatisfaction points with current job",
+            "completed": false
+          },
+          {
+            "id": "mon-family-4",
+            "name": "List unacceptable conditions",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "tasks": [
+      {
+        "title": "Acting Courses",
+        "items": [
+          {
+            "id": "tue-acting-1",
+            "name": "Clarify radio scene requirements",
+            "completed": false
+          },
+          {
+            "id": "tue-acting-2",
+            "name": "Create radio track",
+            "completed": false
+          },
+          {
+            "id": "tue-acting-3",
+            "name": "Compile and verify final audio file",
+            "completed": false
+          },
+          {
+            "id": "tue-acting-4",
+            "name": "Prepare second YouTube session",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for Jobs",
+        "items": [
+          {
+            "id": "tue-job-1",
+            "name": "Find 3 suitable projects in Berlin and save requirements, deadlines and contacts",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "tue-sport-1",
+            "name": "Boxing",
+            "completed": false
+          },
+          {
+            "id": "tue-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "tasks": [
+      {
+        "title": "Apply for Jobs",
+        "items": [
+          {
+            "id": "wed-job-1",
+            "name": "Create job portals spreadsheet",
+            "completed": false
+          },
+          {
+            "id": "wed-job-2",
+            "name": "Add 5 Germany and Europe portals",
+            "completed": false
+          },
+          {
+            "id": "wed-job-3",
+            "name": "Add 3 international remote portals",
+            "completed": false
+          },
+          {
+            "id": "wed-job-4",
+            "name": "Add Gulf region sources",
+            "completed": false
+          },
+          {
+            "id": "wed-job-5",
+            "name": "Create salary comparison table",
+            "completed": false
+          },
+          {
+            "id": "wed-job-6",
+            "name": "Apply for jobs in LinkedIn",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Lectures",
+        "items": [
+          {
+            "id": "wed-lec-1",
+            "name": "Explain visibility, atomicity and mutual exclusion",
+            "completed": false
+          },
+          {
+            "id": "wed-lec-2",
+            "name": "Implement two-thread counter",
+            "completed": false
+          },
+          {
+            "id": "wed-lec-3",
+            "name": "Compare int, volatile and AtomicInteger",
+            "completed": false
+          },
+          {
+            "id": "wed-lec-4",
+            "name": "Fix using AtomicInteger or synchronized",
+            "completed": false
+          },
+          {
+            "id": "wed-lec-5",
+            "name": "Use join() correctly",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "wed-code-1",
+            "name": "LeetCode",
+            "completed": false
+          },
+          {
+            "id": "wed-code-2",
+            "name": "BullsCows - DEX Code optimization",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "wed-sport-1",
+            "name": "Heavy training",
+            "completed": false
+          },
+          {
+            "id": "wed-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "wed-family-1",
+            "name": "Research listed clinics",
+            "completed": false
+          },
+          {
+            "id": "wed-family-2",
+            "name": "Find 5 additional clinics",
+            "completed": false
+          },
+          {
+            "id": "wed-family-3",
+            "name": "Collect specialties and HR contacts",
+            "completed": false
+          },
+          {
+            "id": "wed-family-4",
+            "name": "Find endocrinologist and GP openings",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "tasks": [
+      {
+        "title": "Acting Courses",
+        "items": [
+          {
+            "id": "thu-acting-1",
+            "name": "Record monologues",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-2",
+            "name": "Review recordings",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-3",
+            "name": "Write psychological profile",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-4",
+            "name": "Create acting resume web document",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-5",
+            "name": "Record YouTube session",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for Jobs",
+        "items": [
+          {
+            "id": "thu-job-1",
+            "name": "Find 3 suitable projects in Berlin",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "thu-sport-1",
+            "name": "Boxing",
+            "completed": false
+          },
+          {
+            "id": "thu-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "tasks": [
+      {
+        "title": "Apply for Jobs",
+        "items": [
+          {
+            "id": "fri-job-1",
+            "name": "Update job portal spreadsheet",
+            "completed": false
+          },
+          {
+            "id": "fri-job-2",
+            "name": "Update salary comparison table",
+            "completed": false
+          },
+          {
+            "id": "fri-job-3",
+            "name": "Apply for jobs in LinkedIn",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Lectures",
+        "items": [
+          {
+            "id": "fri-lec-1",
+            "name": "Write JUnit tests for counter",
+            "completed": false
+          },
+          {
+            "id": "fri-lec-2",
+            "name": "Verify result is 200000",
+            "completed": false
+          },
+          {
+            "id": "fri-lec-3",
+            "name": "Answer 5 questions about Generics and concurrency",
+            "completed": false
+          },
+          {
+            "id": "fri-lec-4",
+            "name": "Record mistakes and weak areas",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "fri-code-1",
+            "name": "LeetCode",
+            "completed": false
+          },
+          {
+            "id": "fri-code-2",
+            "name": "DiscoverDE - DEX Code optimization",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "fri-sport-1",
+            "name": "Heavy training",
+            "completed": false
+          },
+          {
+            "id": "fri-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "fri-family-1",
+            "name": "Create employers and openings table",
+            "completed": false
+          },
+          {
+            "id": "fri-family-2",
+            "name": "Determine missing resume information",
+            "completed": false
+          },
+          {
+            "id": "fri-family-3",
+            "name": "Complete LinkedIn profile",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "tasks": [
+      {
+        "title": "Lectures",
+        "items": [
+          {
+            "id": "sat-lec-1",
+            "name": "Implement copy(List<? super T>, List<? extends T>)",
+            "completed": false
+          },
+          {
+            "id": "sat-lec-2",
+            "name": "Run multi-thread counter experiments",
+            "completed": false
+          },
+          {
+            "id": "sat-lec-3",
+            "name": "Test boundary conditions and thread counts",
+            "completed": false
+          },
+          {
+            "id": "sat-lec-4",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "sat-code-1",
+            "name": "Travel Wizard define features",
+            "completed": false
+          },
+          {
+            "id": "sat-code-2",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "sat-sport-1",
+            "name": "Go to the gym",
+            "completed": false
+          },
+          {
+            "id": "sat-sport-2",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "sat-family-1",
+            "name": "Check websites",
+            "completed": false
+          },
+          {
+            "id": "sat-family-2",
+            "name": "Clean LinkedIn and profiles",
+            "completed": false
+          },
+          {
+            "id": "sat-family-3",
+            "name": "Verify contact information and mobile usability",
+            "completed": false
+          },
+          {
+            "id": "sat-family-4",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting",
+        "items": [
+          {
+            "id": "sat-acting-1",
+            "name": "Learn first 10 replies from session",
+            "completed": false
+          },
+          {
+            "id": "sat-acting-2",
+            "name": "Prepare second YouTube video",
+            "completed": false
+          },
+          {
+            "id": "sat-acting-3",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "tasks": [
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "sun-sport-1",
+            "name": "Go to the gym",
+            "completed": false
+          },
+          {
+            "id": "sun-sport-2",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Household",
+        "items": [
+          {
+            "id": "sun-house-1",
+            "name": "Vacuum cleaning",
+            "completed": false
+          },
+          {
+            "id": "sun-house-2",
+            "name": "Clean the bathroom",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Review",
+        "items": [
+          {
+            "id": "sun-review-1",
+            "name": "Prepare next week tasks",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  }
+]
