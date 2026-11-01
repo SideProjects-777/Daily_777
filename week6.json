@@ -8,27 +8,27 @@
           {
             "id": "mon-job-1",
             "name": "Record current compensation (check GPT)",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-job-2",
             "name": "Determine the minimum salary required to change jobs",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-job-3",
             "name": "Set target salary and long-term goal (€6,000–10,000 net)",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-job-4",
             "name": "Define requirements regarding remote work, countries, tech stack, vacation and working conditions",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-job-5",
             "name": "Apply for jobs in LinkedIn",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -63,12 +63,12 @@
           {
             "id": "mon-code-1",
             "name": "LeetCode",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-code-2",
             "name": "Java1Z0-808 - DEX Code optimization",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -123,12 +123,12 @@
           {
             "id": "tue-acting-1",
             "name": "Clarify radio scene requirements",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue-acting-2",
             "name": "Create radio track",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue-acting-3",
@@ -148,7 +148,7 @@
           {
             "id": "tue-job-1",
             "name": "Find 3 suitable projects in Berlin and save requirements, deadlines and contacts",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -178,17 +178,17 @@
           {
             "id": "wed-job-1",
             "name": "Create job portals spreadsheet",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-job-2",
             "name": "Add 5 Germany and Europe portals",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-job-3",
             "name": "Add 3 international remote portals",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-job-4",
@@ -198,12 +198,12 @@
           {
             "id": "wed-job-5",
             "name": "Create salary comparison table",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-job-6",
             "name": "Apply for jobs in LinkedIn",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -248,7 +248,7 @@
           {
             "id": "wed-code-2",
             "name": "BullsCows - DEX Code optimization",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -333,7 +333,7 @@
           {
             "id": "thu-job-1",
             "name": "Find 3 suitable projects in Berlin",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -363,12 +363,12 @@
           {
             "id": "fri-job-1",
             "name": "Update job portal spreadsheet",
-            "completed": false
+            "completed": true
           },
           {
             "id": "fri-job-2",
             "name": "Update salary comparison table",
-            "completed": false
+            "completed": true
           },
           {
             "id": "fri-job-3",
@@ -413,7 +413,7 @@
           {
             "id": "fri-code-2",
             "name": "DiscoverDE - DEX Code optimization",
-            "completed": false
+            "completed": true
           }
         ]
       },
