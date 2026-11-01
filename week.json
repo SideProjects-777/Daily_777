@@ -133,12 +133,12 @@
           {
             "id": "tue-acting-1",
             "name": "Finalize the track for listening - add background melody",
-            "completed": true
+            "completed": false
           },
           {
             "id": "tue-acting-2",
             "name": "Translate About Me video's into 3 languages",
-            "completed": true
+            "completed": false
           },
           {
             "id": "tue-acting-3",
