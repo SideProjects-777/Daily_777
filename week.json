@@ -18,7 +18,7 @@
           {
             "id": "mon-job-3",
             "name": "Verify that the research spreadsheet covers all 27 EU countries",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-job-4",
@@ -38,22 +38,22 @@
           {
             "id": "mon-lecture-1",
             "name": "Understand invariance: why List<Integer> cannot be assigned to List<Number>",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-lecture-2",
             "name": "Study ? extends Number and ? super Integer",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-lecture-3",
             "name": "Understand PECS principle",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-lecture-4",
             "name": "Write examples for extends, super and copying between lists",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -63,7 +63,7 @@
           {
             "id": "mon-code-1",
             "name": "LeetCode",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -73,12 +73,12 @@
           {
             "id": "mon-smart-apply-1",
             "name": "Recalculate yearly net based on the monthly input or vice versa",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-smart-apply-2",
             "name": "Create salary based minimum input field sorted by countries in EU",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -88,7 +88,7 @@
           {
             "id": "mon-sport-1",
             "name": "Heavy training",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-sport-2",
@@ -103,22 +103,22 @@
           {
             "id": "mon-family-1",
             "name": "Specify minimum salary and taxation model",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-family-2",
             "name": "Determine preferred work schedule and workload",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-family-3",
             "name": "List dissatisfaction points with current job",
-            "completed": false
+            "completed": true
           },
           {
             "id": "mon-family-4",
             "name": "List unacceptable conditions",
-            "completed": false
+            "completed": true
           }
         ]
       }
@@ -133,7 +133,7 @@
           {
             "id": "tue-acting-1",
             "name": "Finalize the track for listening - add background melody",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue-acting-2",
@@ -143,7 +143,7 @@
           {
             "id": "tue-acting-3",
             "name": "Make audio from About me video",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue-acting-4",
@@ -173,12 +173,12 @@
           {
             "id": "tue-sport-1",
             "name": "Boxing",
-            "completed": false
+            "completed": true
           },
           {
             "id": "tue-sport-2",
             "name": "Stairs 30 minutes",
-            "completed": false
+            "completed": true
           }
         ]
       }
@@ -193,12 +193,12 @@
           {
             "id": "wed-job-1",
             "name": "Collect salary ranges for Middle–Senior Java Backend Developers across all 27 EU countries",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-job-2",
             "name": "Identify EU countries with the highest salary ranges",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-job-3",
@@ -208,12 +208,12 @@
           {
             "id": "wed-job-4",
             "name": "Flag countries where salary or hiring data is insufficient or unreliable",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-job-6",
             "name": "Apply for jobs",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -253,7 +253,7 @@
           {
             "id": "wed-code-1",
             "name": "LeetCode",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -263,17 +263,17 @@
           {
             "id": "wed-travel-1",
             "name": "Fix a dev environment",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-travel-2",
             "name": "Run it through and create description for the Claude",
-            "completed": false
+            "completed": true
           },
           {
             "id": "wed-travel-3",
             "name": "Test the Claude Code",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -418,7 +418,7 @@
           {
             "id": "fri-job-6",
             "name": "Apply for jobs",
-            "completed": false
+            "completed": true
           }
         ]
       },
@@ -453,7 +453,7 @@
           {
             "id": "fri-code-1",
             "name": "LeetCode",
-            "completed": false
+            "completed": true
           }
         ]
       },
