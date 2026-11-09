@@ -1,0 +1,653 @@
+[
+  {
+    "day": "Monday",
+    "tasks": [
+      {
+        "title": "Apply for Jobs",
+        "items": [
+            {
+              "id": "mon-job-1",
+              "name": "Find and add job search sources for the UAE",
+              "completed": false
+            },
+            {
+              "id": "mon-job-2",
+              "name": "Find and add job search sources for Saudi Arabia and other relevant Gulf markets",
+              "completed": false
+            },
+            {
+              "id": "mon-job-3",
+              "name": "Add the 13 target markets as entries in the existing Job Portals table: USA, Germany, Switzerland, Norway, Netherlands, Luxembourg, Ireland, Denmark, Sweden, Austria, Belgium, Saudi Arabia and UAE",
+              "completed": false
+            },
+            {
+              "id": "mon-job-4",
+              "name": "Add salary fields to the Job Portals table: role, seniority, currency, annual gross range, estimated monthly net range, source, date checked and hiring-from-Germany notes",
+              "completed": false
+            },
+          {
+            "id": "mon-job-5",
+            "name": "Apply for jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Lectures",
+        "items": [
+   {
+          "id": "mon-jvm-1",
+          "name": "Understand JVM architecture: Class Loader, Runtime Data Areas, Execution Engine, and how Java bytecode is executed.",
+          "completed": false
+        },
+        {
+          "id": "mon-jvm-2",
+          "name": "Understand JVM memory areas: Heap, Stack, Metaspace, Program Counter Register, and Native Method Stack.",
+          "completed": false
+        },
+        {
+          "id": "mon-jvm-3",
+          "name": "Understand the difference between stack and heap memory, including object allocation, local variables, references, and method calls.",
+          "completed": false
+        },
+        {
+          "id": "mon-jvm-4",
+          "name": "Write a Java example demonstrating object references, stack frames, and shared heap objects. Explain what happens in memory during execution.",
+          "completed": false
+        }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "mon-code-1",
+            "name": "LeetCode",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Smart apply",
+        "items": [
+          {
+            "id": "mon-smart-apply-1",
+            "name": "Page for explaining netto, brutto and salary taxes",
+            "completed": false
+          },
+          {
+            "id": "mon-smart-apply-2",
+            "name": "Mother part of companies",
+            "completed": false
+          }
+        ]
+      },
+	   {
+        "title": "Travel Wizard",
+        "items": [
+          {
+            "id": "mon-travel-1",
+            "name": "Fix a dev environment",
+            "completed": false
+          },
+          {
+            "id": "mon-travel-2",
+            "name": "Run it through and create description for the Claude",
+            "completed": false
+          },
+          {
+            "id": "mon-travel-3",
+            "name": "Test the Claude Code",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "mon-sport-1",
+            "name": "Heavy training",
+            "completed": false
+          },
+          {
+            "id": "mon-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "mon-family-1",
+            "name": "Create a new version of the website using Claude",
+            "completed": false
+          },
+          {
+            "id": "mon-family-2",
+            "name": "Submit a request to delete an old GitHub account",
+            "completed": false
+          },
+          {
+            "id": "mon-family-3",
+            "name": "Check the website: information, contact details, how it looks on a phone",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "tasks": [
+      {
+        "title": "Acting Courses",
+        "items": [
+          {
+            "id": "tue-acting-1",
+            "name": "Background music part",
+            "completed": false
+          },
+          {
+            "id": "tue-acting-2",
+            "name": "Go through script 5-10 times",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for Jobs",
+        "items": [
+          {
+            "id": "tue-job-1",
+            "name": "Find 3 suitable projects in Berlin and save requirements, deadlines and contacts",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "tue-sport-1",
+            "name": "Boxing",
+            "completed": false
+          },
+          {
+            "id": "tue-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "tasks": [
+      {
+        "title": "Apply for Jobs",
+        "items": [
+  {
+              "id": "wed-job-1",
+              "name": "Research annual gross salary ranges for Java Backend and Java Full-stack developers (Middle–Senior) in Germany, Switzerland, Norway, Netherlands and Luxembourg",
+              "completed": false
+            },
+            {
+              "id": "wed-job-2",
+              "name": "Research annual gross salary ranges for Java Backend and Java Full-stack developers (Middle–Senior) in Ireland, Denmark, Sweden, Austria and Belgium",
+              "completed": false
+            },
+            {
+              "id": "wed-job-3",
+              "name": "Research annual gross salary ranges for Java Backend and Java Full-stack developers (Middle–Senior) in the USA",
+              "completed": false
+            },
+            {
+              "id": "wed-job-4",
+              "name": "Check which target markets allow an employer to hire a developer who continues living in Germany (local payroll, EOR or contractor arrangement)",
+              "completed": false
+            },
+            {
+              "id": "wed-job-5",
+              "name": "Record sources, date checked and confidence level; flag missing or unreliable salary data instead of guessing",
+              "completed": false
+            },
+          {
+            "id": "wed-job-6",
+            "name": "Apply for jobs",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Lectures",
+        "items": [
+   {
+          "id": "wed-jvm-1",
+          "name": "Understand garbage collection, object reachability, GC roots, and how the JVM determines whether an object can be collected.",
+          "completed": false
+        },
+        {
+          "id": "wed-jvm-2",
+          "name": "Understand strong, soft, weak, and phantom references, including practical use cases.",
+          "completed": false
+        },
+        {
+          "id": "wed-jvm-3",
+          "name": "Understand common memory leak scenarios in Java, including static collections, listeners, caches, and unclosed resources.",
+          "completed": false
+        },
+        {
+          "id": "wed-jvm-4",
+          "name": "Create a small Java example that produces a memory leak. Identify the cause and fix it.",
+          "completed": false
+        }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "wed-code-1",
+            "name": "LeetCode",
+            "completed": false
+          }
+        ]
+      },
+	  {
+        "title": "Travel Games",
+        "items": [
+          {
+            "id": "wed-travel-1",
+            "name": "Create a list of first 3 games",
+            "completed": false
+          },
+          {
+            "id": "wed-travel-2",
+            "name": "Write down a list for that",
+            "completed": false
+          },
+          {
+            "id": "wed-travel-3",
+            "name": "Claude generate a code for that",
+            "completed": false
+          }
+		  
+        ]
+      },
+	  	   {
+        "title": "Travel Wizard",
+        "items": [
+          {
+            "id": "wed-travel-1",
+            "name": "Add ads",
+            "completed": false
+          },
+          {
+            "id": "wed-travel-2",
+            "name": "Push to play store",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "wed-sport-1",
+            "name": "Heavy training",
+            "completed": false
+          },
+          {
+            "id": "wed-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "wed-family-1",
+            "name": "Research listed clinics",
+            "completed": false
+          },
+          {
+            "id": "wed-family-2",
+            "name": "Find 5 additional clinics",
+            "completed": false
+          },
+          {
+            "id": "wed-family-3",
+            "name": "Clean up your LinkedIn profile by removing errors and outdated information",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "tasks": [
+      {
+        "title": "Acting Courses",
+        "items": [
+          {
+            "id": "thu-acting-1",
+            "name": "What is showreel?",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-2",
+            "name": "Create temporal acting website",
+            "completed": false
+          },
+          {
+            "id": "thu-acting-3",
+            "name": "Create content planning and everything",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Apply for Jobs",
+        "items": [
+          {
+            "id": "thu-job-1",
+            "name": "Find 3 suitable projects in Berlin",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "thu-sport-1",
+            "name": "Boxing",
+            "completed": false
+          },
+          {
+            "id": "thu-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "tasks": [
+      {
+        "title": "Apply for Jobs",
+        "items": [
+            {
+              "id": "fri-job-1",
+              "name": "Research annual gross salary ranges for Java Backend and Java Full-stack developers (Middle–Senior) in Saudi Arabia and the UAE",
+              "completed": false
+            },
+            {
+              "id": "fri-job-2",
+              "name": "Estimate monthly net income, separating relocation scenarios from remote employment while living in Germany",
+              "completed": false
+            },
+            {
+              "id": "fri-job-3",
+              "name": "Compare employment options from Germany with employers in the USA, EU and Gulf (local employment, EOR, cross-border hiring or contractor)",
+              "completed": false
+            },
+            {
+              "id": "fri-job-4",
+              "name": "Compare compensation packages: guaranteed base salary, bonus, equity, pension, vacation and relocation support",
+              "completed": false
+            },
+            {
+              "id": "fri-job-5",
+              "name": "Create a preliminary ranking of the five most promising target markets based on net income, hiring feasibility and working conditions",
+              "completed": false
+            },
+            {
+              "id": "fri-job-6",
+              "name": "Record data gaps and define markets or compensation details requiring deeper research next week",
+              "completed": false
+            }
+          ]
+      },
+      {
+        "title": "Lectures",
+        "items": [
+        {
+          "id": "fri-jvm-1",
+          "name": "Understand the generational garbage collection model: Young Generation, Old Generation, Minor GC, and Major/Full GC.",
+          "completed": false
+        },
+        {
+          "id": "fri-jvm-2",
+          "name": "Compare Serial GC, Parallel GC, G1 GC, and ZGC. Understand their main differences and typical use cases.",
+          "completed": false
+        },
+        {
+          "id": "fri-jvm-3",
+          "name": "Learn basic JVM memory configuration options, including -Xms, -Xmx, and how to inspect JVM memory usage.",
+          "completed": false
+        },
+        {
+          "id": "fri-jvm-4",
+          "name": "Run a Java application with JVM memory options, observe memory usage, and explain what happens when the heap approaches its maximum size.",
+          "completed": false
+        }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "fri-code-1",
+            "name": "LeetCode",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Next Week",
+        "items": [
+          {
+            "id": "fri-next-week-1",
+            "name": "Research about next week coding project",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "fri-sport-1",
+            "name": "Heavy training",
+            "completed": false
+          },
+          {
+            "id": "fri-sport-2",
+            "name": "Stairs 30 minutes",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "fri-family-1",
+            "name": "Collect specialties and HR contacts",
+            "completed": false
+          },
+          {
+            "id": "fri-family-2",
+            "name": "Find endocrinologist and GP openings",
+            "completed": false
+          },
+          {
+            "id": "fri-family-3",
+            "name": "Send github request to fetch the email",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "tasks": [
+      {
+        "title": "Lectures",
+        "items": [
+          {
+            "id": "sat-lec-1",
+            "name": "Implement copy(List<? super T>, List<? extends T>)",
+            "completed": false
+          },
+          {
+            "id": "sat-lec-2",
+            "name": "Run multi-thread counter experiments",
+            "completed": false
+          },
+          {
+            "id": "sat-lec-3",
+            "name": "Test boundary conditions and thread counts",
+            "completed": false
+          },
+          {
+            "id": "sat-lec-4",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Coding Task",
+        "items": [
+          {
+            "id": "sat-code-1",
+            "name": "Travel Wizard define features",
+            "completed": false
+          },
+          {
+            "id": "sat-code-2",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "sat-sport-1",
+            "name": "Go to the gym",
+            "completed": false
+          },
+          {
+            "id": "sat-sport-2",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Family Reunion",
+        "items": [
+          {
+            "id": "sat-family-1",
+            "name": "Check websites",
+            "completed": false
+          },
+          {
+            "id": "sat-family-2",
+            "name": "Clean LinkedIn and profiles",
+            "completed": false
+          },
+          {
+            "id": "sat-family-3",
+            "name": "Verify contact information and mobile usability",
+            "completed": false
+          },
+          {
+            "id": "sat-family-4",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Acting",
+        "items": [
+          {
+            "id": "sat-acting-1",
+            "name": "Learn first 10 replies from session",
+            "completed": false
+          },
+          {
+            "id": "sat-acting-2",
+            "name": "Prepare second YouTube video",
+            "completed": false
+          },
+          {
+            "id": "sat-acting-3",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Sunday",
+    "tasks": [
+      {
+        "title": "Sports",
+        "items": [
+          {
+            "id": "sun-sport-1",
+            "name": "Go to the gym",
+            "completed": false
+          },
+          {
+            "id": "sun-sport-2",
+            "name": "Complete leftovers",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Household",
+        "items": [
+          {
+            "id": "sun-house-1",
+            "name": "Vacuum cleaning",
+            "completed": false
+          },
+          {
+            "id": "sun-house-2",
+            "name": "Clean the bathroom",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "title": "Review",
+        "items": [
+          {
+            "id": "sun-review-1",
+            "name": "Prepare next week tasks",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  }
+]
